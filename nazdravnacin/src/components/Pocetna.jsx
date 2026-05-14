@@ -13,7 +13,7 @@ export default function Pocetna() {
           <p>Ovdje počinje</p>
           <p>stvaranje zdravih navika!</p>
         </div>
-        <div className="text-2xl ">
+        <div className="text-xl ">
           <p>Naš stručni tim će vam pomoći da prehrana</p>{" "}
           <p>postane alat za zdravlje, a gubitak viška kilograma</p>
           <p> bude na zdrav i siguran način.</p>

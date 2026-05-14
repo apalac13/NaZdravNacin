@@ -15,7 +15,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="py-7 flex items-center justify-center gap-24 border-b border-green-11 fixed top-0 w-full">
+    <nav className="py-7 flex items-center justify-center gap-20 bg-white-20 border-b border-green-11 fixed top-0 w-full">
       <Link href={"/"}>
         <Image
           alt="logo"
