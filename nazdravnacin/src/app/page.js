@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="">
-      <p>Je li ovo montserrat</p>
+      <p>Na Zdrav Nacin stranica</p>
     </div>
   );
 }
