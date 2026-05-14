@@ -18,17 +18,15 @@
     box-sizing: border-box;
   }
 
-  html {
-    max-width: 100%;
+  html,
+  body {
     overflow-x: hidden;
   }
 
   body {
     background-color: #ffffff;
     margin: 0 auto;
-    max-width: 1440px;
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
   }
 }
