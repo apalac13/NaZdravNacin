@@ -22,7 +22,11 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={montserrat.variable}>
+    <html
+      lang="en"
+      className={montserrat.variable}
+      data-scroll-behavior="smooth"
+    >
       <body className="font-montserrat text-black-40">{children}</body>
     </html>
   );
