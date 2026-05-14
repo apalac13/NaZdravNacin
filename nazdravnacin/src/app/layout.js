@@ -11,7 +11,7 @@ export const metadata = {
   title: "Na Zdrav Nacin",
   description: "Na Zdrav Nacin",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icons/nazdravnacinfavicon.svg",
   },
 };
 
