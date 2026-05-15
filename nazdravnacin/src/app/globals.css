@@ -22,6 +22,9 @@
   body {
     overflow-x: hidden;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     background-color: #ffffff;

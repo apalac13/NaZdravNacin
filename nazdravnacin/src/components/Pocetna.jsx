@@ -28,7 +28,14 @@ export default function Pocetna() {
         </div>
       </div>
       <div className="w-1/2 flex justify-end">
-        <Image alt="plate" src={"/images/plate.png"} width={500} height={500} />
+        <div className="relative w-125 h-125 ">
+          <Image
+            alt="plate"
+            src={"/images/plate.png"}
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );
