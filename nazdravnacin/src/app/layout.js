@@ -8,8 +8,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Na Zdrav Nacin",
-  description: "Na Zdrav Nacin",
+  title: "Na Zdrav Način",
+  description: "Na Zdrav Način",
   icons: {
     icon: "/icons/nazdravnacinfavicon.svg",
   },
@@ -22,11 +22,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={montserrat.variable}
-      data-scroll-behavior="smooth"
-    >
+    <html lang="en" className={montserrat.variable}>
       <body className="font-montserrat text-black-40">{children}</body>
     </html>
   );

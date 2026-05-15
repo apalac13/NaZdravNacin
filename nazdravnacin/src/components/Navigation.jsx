@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import Button from "./Button";
 
 export default function Navigation() {
@@ -15,23 +14,19 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="py-7 flex items-center justify-center gap-20 bg-white-20 border-b border-green-11 fixed top-0 w-full">
-      <Link href={"/"}>
-        <Image
-          alt="logo"
-          src={"/icons/logo.svg"}
-          width={140}
-          height={60}
-          className="h-auto"
-        />
-      </Link>
+    <nav className="py-6 flex items-center justify-center gap-20 bg-white-20 border-b border-green-11 fixed top-0 z-50 w-full">
+      <a href={"/"}>
+        <div className="relative w-36 h-14">
+          <Image alt="logo" src={"/icons/logo.svg"} fill />
+        </div>
+      </a>
       <div className="flex gap-6 ">
         {navItems.map((item) => (
-          <Link key={item.link} href={item.link}>
+          <a key={item.link} href={item.link}>
             <p className="text-lg text-green-10 font-medium hover:text-green-10/70">
               {item.name}
             </p>
-          </Link>
+          </a>
         ))}
         <div className="text-lg text-green-10 font-medium ">
           <span className="hover:text-green-10/70 cursor-pointer">HR</span> /{" "}
