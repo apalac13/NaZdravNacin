@@ -6,7 +6,7 @@
   --color-green-10: #335226;
   --color-green-11: #cce0bb;
   --color-green-12: #528a3e;
-  --color-white-20: #ffffff;
+  --color-white-20: #fffafa;
   --color-gray-30: #626161;
   --color-black-40: #1e1e1e;
 }
@@ -27,7 +27,7 @@
   }
 
   body {
-    background-color: #ffffff;
+    background-color: #fffafa;
     width: 100%;
     min-height: 100vh;
   }
