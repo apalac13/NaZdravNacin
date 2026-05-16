@@ -33,6 +33,7 @@ export default function Pocetna() {
             alt="plate"
             src={"/images/plate.png"}
             fill
+            priority
             className="object-cover"
           />
         </div>

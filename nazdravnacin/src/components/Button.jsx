@@ -6,7 +6,7 @@ export default function Button({ type, text, color = "green" }) {
     <button
       type={type}
       className={clsx(
-        "border border-green-10 py-4 px-8 rounded-full cursor-pointer max-w-64",
+        "border border-green-10 py-4 px-6 rounded-full cursor-pointer max-w-60 w-full",
         color == "white"
           ? " bg-white-20 hover:bg-green-11"
           : " bg-green-10 hover:bg-green-10/90 ",
