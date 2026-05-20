@@ -70,7 +70,10 @@ export default function Paketi() {
   ];
 
   return (
-    <div className="w-full h-full flex flex-col gap-28 items-center justify-center bg-green-11 px-14 py-24">
+    <section
+      id="paketi"
+      className="w-full h-full flex flex-col gap-28 items-center justify-center bg-green-11 px-14 py-24"
+    >
       <div className="flex flex-col gap-2 items-center justify-center">
         <p className="text-lg text-green-10 font-medium ">PAKETI</p>
         <p className="text-2xl font-semibold">PROGRAMI PRILAGOĐENI VAMA</p>
@@ -106,6 +109,6 @@ export default function Paketi() {
         </p>
         <Button type={"button"} text={`ZATRAŽI PREPORUKU \u2192`} />
       </div>
-    </div>
+    </section>
   );
 }
