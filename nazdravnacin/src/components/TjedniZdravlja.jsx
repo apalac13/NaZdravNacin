@@ -47,11 +47,19 @@ export default function TjedniZdravlja() {
             <p className="text-green-10 text-sm ">ALL INCLUSIVE</p>
           </div>
           <div className=" bg-green-10 w-full overflow-hidden">
-            <p className="text-white-20 text-sm font-medium text-center animate-infinite-scroll">
-              Nadolazeći termini: 27.09 - 04.10.2026, 04.10 - 11.10.2026, 11.10
-              - 18.10.2026 itd... Broj mjesta je ograničen, rezerviraj svoje
-              mjesto na vrijeme!
-            </p>
+            <div className="flex whitespace-nowrap animate-infinite-scroll">
+              <p className="text-white-20 text-sm font-medium px-8">
+                Nadolazeći termini: 27.09 - 04.10.2026, 04.10 - 11.10.2026,
+                11.10 - 18.10.2026 itd... Broj mjesta je ograničen, rezerviraj
+                svoje mjesto na vrijeme!
+              </p>
+
+              <p className="text-white-20 text-sm font-medium px-8">
+                Nadolazeći termini: 27.09 - 04.10.2026, 04.10 - 11.10.2026,
+                11.10 - 18.10.2026 itd... Broj mjesta je ograničen, rezerviraj
+                svoje mjesto na vrijeme!
+              </p>
+            </div>
           </div>
           <div className=" self-start px-14 flex flex-col gap-6">
             <div className="flex flex-col ">
