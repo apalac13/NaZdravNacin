@@ -23,12 +23,12 @@ export default function Navigation() {
       <div className="flex gap-6 ">
         {navItems.map((item) => (
           <a key={item.link} href={item.link}>
-            <p className="text-lg text-green-10 font-medium hover:text-green-10/70">
+            <p className="text-base text-green-10 font-medium hover:text-green-10/70">
               {item.name}
             </p>
           </a>
         ))}
-        <div className="text-lg text-green-10 font-medium ">
+        <div className="text-base text-green-10 font-medium ">
           <span className="hover:text-green-10/70 cursor-pointer">HR</span> /{" "}
           <span className="hover:text-green-10/70 cursor-pointer">ENG</span>
         </div>

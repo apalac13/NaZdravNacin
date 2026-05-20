@@ -2,6 +2,7 @@
 
 @theme {
   --font-montserrat: var(--font-montserrat);
+  --animate-infinite-scroll: infinite-scroll 20s linear infinite;
 
   --color-green-10: #335226;
   --color-green-11: #cce0bb;
@@ -9,6 +10,16 @@
   --color-white-20: #fffafa;
   --color-gray-30: #626161;
   --color-black-40: #1e1e1e;
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @layer base {
