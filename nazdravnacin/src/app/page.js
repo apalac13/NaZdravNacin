@@ -7,11 +7,11 @@ import Paketi from "@/components/Paketi";
 import TjedniZdravlja from "@/components/TjedniZdravlja";
 import Galerija from "@/components/Galerija";
 import PoklonBonovi from "@/components/PoklonBonovi";
+import Newsletter from "@/components/Newsletter";
 
 export default function Home() {
   return (
-    <div>
-      <Navigation />
+    <>
       <Pocetna />
       <Kartice />
       <Onama />
@@ -19,6 +19,7 @@ export default function Home() {
       <TjedniZdravlja />
       <Galerija />
       <PoklonBonovi />
-    </div>
+      <Newsletter />
+    </>
   );
 }

@@ -27,7 +27,7 @@ export default function Onama() {
       <div className="w-1/2 flex flex-col gap-7">
         <div className="flex flex-col gap-1">
           <p className="text-lg text-green-10 font-medium ">O NAMA</p>
-          <p className="text-2xl font-medium ">
+          <p className="text-2xl font-semibold ">
             Zdravlju Vaš Partner Na Putu Prema{" "}
             <span className="text-green-10">Zdravlju</span>!
           </p>
