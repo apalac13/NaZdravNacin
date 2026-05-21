@@ -31,8 +31,9 @@ export default function TjedniZdravlja() {
           <div className="flex flex-col gap-px items-center justify-center">
             <p className="text-lg text-green-10 font-medium ">PREMIUM PONUDA</p>
             <p className="text-2xl font-semibold">TJEDNI ZDRAVLJA IZLETI</p>
-            <p className="text-2xl  font-medium">
-              All-inclusive iskustvo za potpuni reset tijela i uma u Istri
+            <p className="text-2xl  font-semibold">
+              All-inclusive iskustvo za potpuni reset tijela i uma{" "}
+              <span className="text-green-10">u Istri</span>
             </p>
           </div>
           <p className="text-base italic font-medium text-center ">
