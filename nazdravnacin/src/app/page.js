@@ -6,6 +6,7 @@ import Onama from "@/components/Onama";
 import Paketi from "@/components/Paketi";
 import TjedniZdravlja from "@/components/TjedniZdravlja";
 import Galerija from "@/components/Galerija";
+import PoklonBonovi from "@/components/PoklonBonovi";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Paketi />
       <TjedniZdravlja />
       <Galerija />
+      <PoklonBonovi />
     </div>
   );
 }
