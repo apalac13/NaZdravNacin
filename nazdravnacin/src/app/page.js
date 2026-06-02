@@ -8,7 +8,6 @@ import TjedniZdravlja from "@/components/TjedniZdravlja";
 import Galerija from "@/components/Galerija";
 import PoklonBonovi from "@/components/PoklonBonovi";
 import Newsletter from "@/components/Newsletter";
-
 export default function Home() {
   return (
     <>
