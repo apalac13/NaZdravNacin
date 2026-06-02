@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function Footer() {
   const navItems = [
-    { name: "Početna", link: "#pocetna" },
-    { name: "O Nama", link: "#onama" },
-    { name: "Paketi", link: "#paketi" },
-    { name: "Tjedni zdravlja", link: "#tjednizdravlja" },
-    { name: "Galerija", link: "#galerija" },
-    { name: "Poklon bonovi", link: "#poklonbonovi" },
-    { name: "Newsletter", link: "#newsletter" },
+    { name: "Početna", link: "/#pocetna" },
+    { name: "O Nama", link: "/#onama" },
+    { name: "Paketi", link: "/#paketi" },
+    { name: "Tjedni zdravlja", link: "/#tjednizdravlja" },
+    { name: "Galerija", link: "/#galerija" },
+    { name: "Poklon bonovi", link: "/#poklonbonovi" },
+    { name: "Newsletter", link: "/#newsletter" },
   ];
 
   const contactInformations = [
