@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Pocetna() {
   return (
@@ -19,12 +20,16 @@ export default function Pocetna() {
           <p> bude na zdrav i siguran način.</p>
         </div>
         <div className="flex  gap-5">
-          <Button type={"button"} text={"ZAPOČNITE PROGRAM"} />
-          <Button
-            type={"button"}
-            text={"TJEDNI ZDRAVLJA U ISTRI"}
-            color="white"
-          />
+          <Link href={"/#paketi"} className="max-w-60 w-full">
+            <Button type={"button"} text={"ZAPOČNITE PROGRAM"} />
+          </Link>
+          <Link href={"/#tjednizdravlja"} className="max-w-60 w-full">
+            <Button
+              type={"button"}
+              text={"TJEDNI ZDRAVLJA U ISTRI"}
+              color="white"
+            />
+          </Link>
         </div>
       </div>
       <div className="w-1/2 flex justify-end">

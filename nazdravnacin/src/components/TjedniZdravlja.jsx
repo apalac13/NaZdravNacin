@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Bullet from "./Bullet";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function TjedniZdravlja() {
   const items = [
@@ -93,7 +94,12 @@ export default function TjedniZdravlja() {
               Pogledaj termine, pošalji upit i šaljemo ti detaljan program i
               lokaciju
             </p>
-            <Button type={"button"} text={"POŠALJI UPIT"} />
+            <Link
+              href={"/kontakt?type=tjednizdravlja"}
+              className="max-w-60 w-full"
+            >
+              <Button type={"button"} text={"POŠALJI UPIT"} />
+            </Link>
           </div>
         </div>
       </div>

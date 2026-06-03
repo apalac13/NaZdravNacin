@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Navigation() {
   const navItems = [
@@ -33,7 +34,9 @@ export default function Navigation() {
           <span className="hover:text-green-10/70 cursor-pointer">ENG</span>
         </div>
       </div>
-      <Button type={"button"} text={"KONTAKTIRAJTE NAS"} />
+      <Link href={"/kontakt?type=kontakt"} className="max-w-60 w-full">
+        <Button type={"button"} text={"KONTAKTIRAJTE NAS"} />
+      </Link>
     </nav>
   );
 }

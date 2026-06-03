@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Onama() {
   return (
@@ -55,7 +56,9 @@ export default function Onama() {
             potrebno da ima slobode kako bi njegovo zadovoljstvo bilo jače.
           </p>
         </div>
-        <Button type={"button"} text={"ZAPOČNITE PROGRAM"} />
+        <Link href={"/#paketi"} className="max-w-60 w-full">
+          <Button type={"button"} text={"ZAPOČNITE PROGRAM"} />
+        </Link>
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import Button from "./Button";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Paket({ pack }) {
   const [showAll, setShowAll] = useState(false);
@@ -87,13 +88,16 @@ export default function Paket({ pack }) {
           </button>
         )}
       </div>
-      <div className="w-full flex justify-center mt-auto">
+      <Link
+        href="/kontakt?type=program"
+        className="w-full flex justify-center mt-auto"
+      >
         <Button
           type={"button"}
           text={"POŠALJI UPIT"}
           color={pack.titleOne === "PROGRAM 2" && "white"}
         />
-      </div>
+      </Link>
     </div>
   );
 }
