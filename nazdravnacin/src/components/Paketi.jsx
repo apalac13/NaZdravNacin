@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Paket from "./Paket";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Paketi() {
   const commonItems = [
@@ -107,7 +108,9 @@ export default function Paketi() {
         <p className="text-2xl font-semibold">
           Niste sigurni koji program je za vas ?
         </p>
-        <Button type={"button"} text={`ZATRAŽI PREPORUKU \u2192`} />
+        <Link href={"/kontakt?type=kontakt"} className="max-w-60 w-full">
+          <Button type={"button"} text={`ZATRAŽI PREPORUKU \u2192`} />
+        </Link>
       </div>
     </section>
   );
