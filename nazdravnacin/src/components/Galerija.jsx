@@ -1,6 +1,7 @@
 "use client";
 import Button from "./Button";
 import ImageGallery from "./ImageGallery";
+import Link from "next/link";
 
 export default function Galerija() {
   return (
@@ -16,7 +17,9 @@ export default function Galerija() {
               Pogledajte našu <br /> galeriju
             </p>
           </div>
-          <Button type={"button"} text={"POGLEDAJ SVE"} />
+          <Link href={"/galerija"} className="w-full max-w-60">
+            <Button type={"button"} text={"POGLEDAJ SVE"} />
+          </Link>
         </div>
         <div className="col-span-2 relative w-full h-91.75 overflow-hidden rounded-2xl ">
           <ImageGallery alt="kuca" src={"/images/kuca.jpg"} />
