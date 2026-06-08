@@ -28,7 +28,12 @@ export default function Kontakt() {
         "Pošaljite nam upit za program i odgovaramo vam u najkraćem mogućem roku",
       showSelect: true,
       selectLabel: "ODABERI PROGRAM",
-      options: ["ODABERI PROGRAM", "Program 1", "Program 2", "Program 3"],
+      options: [
+        "ODABERI PROGRAM",
+        "Program 1 - Osnovni",
+        "Program 2 - Transformacija (7 mjeseci)",
+        "Program 3 - Detox & Regeneracija",
+      ],
       email: "programinazdravnacin@gmail.com",
       points: [
         "Odgovaramo na upite u roku 24h.",
