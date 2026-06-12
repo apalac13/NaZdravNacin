@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Informations({ config }) {
+  const t = useTranslations("contact.information");
   const contactInformations = [
     {
       alt: "mail",
@@ -43,7 +45,7 @@ export default function Informations({ config }) {
         />
       </div>
       <div className="flex flex-col gap-6">
-        <p className="font-medium text-green-10">KONTAKT</p>
+        <p className="font-medium text-green-10">{t("contact")}</p>
         <div className="flex flex-col gap-3">
           {contactInformations.map((contact, index) => (
             <div

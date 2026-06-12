@@ -1,4 +1,5 @@
 "use client";
+
 import Pocetna from "@/components/Pocetna";
 import Kartice from "@/components/Kartice";
 import Onama from "@/components/Onama";
@@ -7,6 +8,7 @@ import TjedniZdravlja from "@/components/TjedniZdravlja";
 import Galerija from "@/components/Galerija";
 import PoklonBonovi from "@/components/PoklonBonovi";
 import Newsletter from "@/components/Newsletter";
+
 export default function Home() {
   return (
     <>

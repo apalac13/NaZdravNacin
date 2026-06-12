@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import InputField from "./InputField";
+import { useTranslations } from "next-intl";
 
 export default function Form({ config }) {
+  const t = useTranslations("contact.form");
   const [reservationData, setReservationData] = useState({
     option: "",
     person: "",
@@ -57,7 +59,7 @@ export default function Form({ config }) {
       )}
       <InputField
         id={"person"}
-        label={"Ime i prezime *"}
+        label={t("fullName")}
         type={"text"}
         name={"person"}
         value={reservationData.person}
@@ -65,7 +67,7 @@ export default function Form({ config }) {
       />
       <InputField
         id={"email"}
-        label={"Email *"}
+        label={t("email")}
         type={"email"}
         name={"email"}
         value={reservationData.email}
@@ -73,7 +75,7 @@ export default function Form({ config }) {
       />
       <InputField
         id={"phone"}
-        label={"Broj mobitela *"}
+        label={t("phone")}
         type={"text"}
         name={"phoneNumber"}
         value={reservationData.phoneNumber}
@@ -84,7 +86,7 @@ export default function Form({ config }) {
         className="flex flex-col items-center justify-center max-w-100 w-full"
       >
         <p className="self-start font-medium text-sm">
-          Napomena <span className="font-normal">(neobavezno)</span>{" "}
+          {t("note")} <span className="font-normal">{t("optional")}</span>{" "}
         </p>
         <textarea
           type="text"
@@ -100,7 +102,7 @@ export default function Form({ config }) {
         type="submit"
         className="max-w-100 w-full h-12.5  border border-green-10 bg-green-10 rounded-2xl hover:bg-green-10/90 cursor-pointer"
       >
-        <p className="text-white-20 text-sm ">Pošalji</p>
+        <p className="text-white-20 text-sm ">{t("submit")}</p>
       </button>
     </form>
   );

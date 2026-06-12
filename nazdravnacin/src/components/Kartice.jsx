@@ -1,27 +1,29 @@
 "use client";
 import Kartica from "./Kartica";
+import { useTranslations } from "next-intl";
 
 export default function Kartice() {
+  const t = useTranslations("cards");
   const cards = [
     {
       icon: "/icons/person.svg",
-      title: "Individualan pristup",
-      text: "Svaki plan prilagođen je vašem tijelu, ciljevima i načinu života.",
+      title: t("card1.title"),
+      text: t("card1.text"),
     },
     {
       icon: "/icons/school.svg",
-      title: "Stručan tim",
-      text: "Radimo uz podršku nutricionista, herbalista i stručnjaka prirodne medicine.",
+      title: t("card2.title"),
+      text: t("card2.text"),
     },
     {
       icon: "/icons/dinner-dining.svg",
-      title: "Bez ekstremnih dijeta",
-      text: "Bez izgladnjivanja i nezdravih metoda — samo održiv pristup.",
+      title: t("card3.title"),
+      text: t("card3.text"),
     },
     {
       icon: "/icons/achivement.svg",
-      title: "Dugoročni rezultati",
-      text: "Gradimo navike koje ostaju s vama cijeli život.",
+      title: t("card4.title"),
+      text: t("card4.text"),
     },
   ];
 

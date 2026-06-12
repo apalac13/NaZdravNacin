@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Newsletter() {
+  const t = useTranslations("newsletter");
   return (
     <section
       id="newsletter"
@@ -14,30 +16,26 @@ export default function Newsletter() {
         <div className="flex flex-col gap-px items-center justify-center">
           <p className="text-lg text-green-10 font-medium ">NEWSLETTER</p>
           <p className="text-2xl font-semibold ">
-            PRIDRUŽITE SE NAŠEM
-            <span className="text-green-10"> NEWSLETTERU</span>
+            {t("title1")}
+            <span className="text-green-10"> {t("title2")}</span>
           </p>
-          <p className="text-2xl  font-semibold">
-            Saznajte prvi o prehrani, zdravim navikama, receptima i novostima
-          </p>
+          <p className="text-2xl  font-semibold">{t("subtitle")}</p>
         </div>
         <div className="w-full flex flex-col gap-6 items-center justify-center">
           <div className="max-w-187.5 w-full flex gap-3">
             <input
               type="email"
-              placeholder="Unesite vašu email adresu..."
+              placeholder={t("placeholder")}
               className="w-full h-12.5 border border-black-40 rounded-2xl p-3 placeholder:text-sm"
             />
             <button
               type="button"
               className="w-42.5 h-12.5 border border-green-10 bg-green-10 rounded-2xl hover:bg-green-10/90 cursor-pointer"
             >
-              <p className="text-white-20 text-xs ">PRETPLATI SE</p>
+              <p className="text-white-20 text-xs ">{t("button")}</p>
             </button>
           </div>
-          <p className="text-gray-30">
-            Bez neželjene pošte. Odjava u bilo kojem trenutku.
-          </p>
+          <p className="text-gray-30">{t("note")}</p>
         </div>
       </div>
     </section>

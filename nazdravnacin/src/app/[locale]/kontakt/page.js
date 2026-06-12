@@ -3,53 +3,53 @@ import Form from "@/components/Form";
 import Informations from "@/components/Informations";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Kontakt() {
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
+  const t = useTranslations("contact");
 
   const config = {
     kontakt: {
-      title: "KONTAKT",
-      description:
-        "Kontaktirajte nas, a mi ćemo vam se javiti u najkraćem mogućem roku",
+      title: t("contactPage.title"),
+      description: t("contactPage.description"),
       showSelect: false,
       options: [],
       email: "programinazdravnacin@gmail.com",
       points: [
-        "Pošaljite nam poruku.",
-        "Odgovorit ćemo u najkraćem mogućem roku.",
-        "Za sva pitanja stojimo vam na raspolaganju.",
+        t("contactPage.points.point1"),
+        t("contactPage.points.point2"),
+        t("contactPage.points.point3"),
+        ,
       ],
     },
     program: {
-      title: "PROGRAMI",
-      description:
-        "Pošaljite nam upit za program i odgovaramo vam u najkraćem mogućem roku",
+      title: t("programPage.title"),
+      description: t("programPage.description"),
       showSelect: true,
-      selectLabel: "ODABERI PROGRAM",
+      selectLabel: t("programPage.selectLabel"),
       options: [
-        "ODABERI PROGRAM",
-        "Program 1 - Osnovni",
-        "Program 2 - Transformacija (7 mjeseci)",
-        "Program 3 - Detox & Regeneracija",
+        t("programPage.options.placeholder"),
+        t("programPage.options.program1"),
+        t("programPage.options.program2"),
+        t("programPage.options.program3"),
       ],
       email: "programinazdravnacin@gmail.com",
       points: [
-        "Odgovaramo na upite u roku 24h.",
-        "Program će biti prilagođen vašim ciljevima.",
-        "Rado ćemo odgovoriti na sva pitanja.",
+        t("programPage.points.point1"),
+        t("programPage.points.point2"),
+        t("programPage.points.point3"),
       ],
     },
     tjednizdravlja: {
-      title: "REZERVACIJE ZA TJEDNE ZDRAVLJA IZLETI",
-      description:
-        "Pošaljite upit za rezervaciju na vrijeme i osigurajte svoje mjest za tjedan zdravlja u Istri",
-      warning: "Broj mjesta je ograničen",
+      title: t("healthWeeksPage.title"),
+      description: t("healthWeeksPage.description"),
+      warning: t("healthWeeksPage.warning"),
       showSelect: true,
-      selectLabel: "ODABERI DATUM",
+      selectLabel: t("healthWeeksPage.selectLabel"),
       options: [
-        "ODABERI DATUM",
+        t("healthWeeksPage.selectLabel"),
         "27.09 - 4.10.2026",
         "04.10 - 11.10.2026",
         "11.10 - 18.10.2026",
@@ -67,9 +67,9 @@ export default function Kontakt() {
       ],
       email: "izletinazdravnacin@gmail.com",
       points: [
-        "Nakon prijave kontaktirat ćemo vas unutar 24h.",
-        "Rezervacija je potvrđena nakon kontakta i uplate akontacije.",
-        "Za sva pitanja stojimo vam na raspolaganju.",
+        t("healthWeeksPage.points.point1"),
+        t("healthWeeksPage.points.point2"),
+        t("healthWeeksPage.points.point3"),
       ],
     },
   };
@@ -84,7 +84,7 @@ export default function Kontakt() {
             <span className="inline-block hover:animate-arrow-move">
               &#8592;
             </span>
-            Povratak na početnu
+            {t("back")}
           </p>
         </Link>
         <div className="flex flex-col gap-1 items-center justify-center">
@@ -95,7 +95,7 @@ export default function Kontakt() {
           <p className="text-xl font-medium">{""}</p>
           {currentConfig.warning && (
             <p className="text-md font-medium text-green-10">
-              Broj mjesta je ograničen
+              {currentConfig.warning}
             </p>
           )}
         </div>
