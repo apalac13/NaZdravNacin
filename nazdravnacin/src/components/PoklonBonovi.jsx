@@ -1,8 +1,16 @@
 "use client";
 import PoklonBon from "./PoklonBon";
+import { useTranslations } from "next-intl";
 
 export default function PoklonBonovi() {
-  const programi = ["Program 1", "Program 2", "Program 3", "Tjedan zdravlja"];
+  const t = useTranslations("gift");
+
+  const programs = [
+    t("programs.program1"),
+    t("programs.program2"),
+    t("programs.program3"),
+    t("programs.program4"),
+  ];
 
   return (
     <section
@@ -10,17 +18,18 @@ export default function PoklonBonovi() {
       className="w-full h-lvh flex flex-col  gap-28 justify-center items-center px-14  "
     >
       <div className="flex flex-col gap-2 items-center justify-center">
-        <p className="text-lg text-green-10 font-medium ">POKLON BONOVI</p>
+        <p className="text-lg text-green-10 font-medium ">{t("label")}</p>
         <p className="text-2xl font-semibold text-center">
-          Ovaj poklon bon mozete pokloniti
-          <span className="text-green-10"> vašoj dragoj osobi</span> kako bi joj
-          poklonili potrebni poticaj za
-          <span className="text-green-10"> zdraviji zivot</span> i
-          <span className="text-green-10"> potrebne promjene</span>
+          {t("title_part1")}
+          <span className="text-green-10"> {t("title_highlight1")}</span>{" "}
+          {t("title_part2")}
+          <span className="text-green-10"> {t("title_highlight2")}</span>{" "}
+          {t("title_part3")}
+          <span className="text-green-10"> p{t("title_highlight3")}</span>
         </p>
       </div>
       <div className="flex relative w-full h-full">
-        {programi.map((program, index) => (
+        {programs.map((program, index) => (
           <PoklonBon key={index} program={program} index={index} />
         ))}
       </div>

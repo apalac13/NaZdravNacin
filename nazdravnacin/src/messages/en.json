@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "packages": "Packages",
+    "weekly": "Health Weeks",
+    "gallery": "Gallery",
+    "gift": "Gift Cards",
+    "newsletter": "Newsletter",
+    "contact": "CONTACT US"
+  },
+  "home": {
+    "title1": "The journey toward healthy",
+    "title2": "habits starts here!",
+    "description1": "Our expert team will help you turn nutrition",
+    "description2": "into a tool for improving your health, and losing excess weight",
+    "description3": "in a safe and healthy way.",
+    "button1": "START YOUR PROGRAM",
+    "button2": "WEEKLY HEALTH IN ISTRIA"
+  },
+  "cards": {
+    "card1": {
+      "title": "Personalized Approach",
+      "text": "Every plan is tailored to your body, goals, and lifestyle."
+    },
+    "card2": {
+      "title": "Expert Team",
+      "text": "We work with the support of nutritionists, herbalists, and natural medicine specialists."
+    },
+    "card3": {
+      "title": "No Extreme Diets",
+      "text": "No starvation or unhealthy methods — just a sustainable approach."
+    },
+    "card4": {
+      "title": "Long-Term Results",
+      "text": "We help build habits that stay with you for life."
+    }
+  },
+  "about": {
+    "label": "ABOUT US",
+
+    "title_prefix": "Your Partner on the Journey to",
+    "title_highlight": "Better Health",
+
+    "text1_part1": "Our team consists of experienced",
+    "text1_highlight1": "nutritionists",
+    "text1_part2": ",",
+    "text1_highlight2": "herbalists",
+    "text1_part3": "and",
+    "text1_highlight3": "natural medicine practitioners",
+    "text1_part4": "all dedicated to helping people unlock their full potential and achieve results they can be proud of. Our approach is fully personalized.",
+
+    "text1_part5": "Our priority is",
+    "text1_highlight4": "your health",
+    "text1_part6": ", and our nutritional approach is based on safe, high-quality, and scientifically supported research. It is important to understand that there are many dangerous diets today that rely on extreme methods and unhealthy chemical substances.",
+
+    "text2_part1": "Our goal is to help you maintain",
+    "text2_highlight1": "healthy weight",
+    "text2_part2": ",",
+    "text2_highlight2": "strength",
+    "text2_part3": ",",
+    "text2_highlight3": "cognitive performance",
+    "text2_part4": ",",
+    "text2_highlight4": "clarity",
+    "text2_part5": "and",
+    "text2_highlight5": "freshness",
+    "text2_part6": ". We also believe that no one should be forced into anything and that everyone deserves freedom in order to achieve greater well-being and satisfaction.",
+
+    "button": "START PROGRAM",
+    "gallery": "Take a look at our gallery →"
+  },
+  "packages": {
+    "label": "PACKAGES",
+    "title": "PROGRAMS DESIGNED FOR YOU",
+
+    "includesTitle": "All our programs include",
+
+    "commonItems": {
+      "item1": "Analysis of dietary habits",
+      "item2": "Assessment of current body composition",
+      "item3": "Goal setting",
+      "item4": "Health status evaluation",
+      "item5": "Nutritional monitoring",
+      "item6": "Continuous support",
+      "item7": "Online video consultations (follow-up consultations, progress reviews, further guidance)",
+      "item8": "Nutrition education",
+      "item9": "Education on healthy and unhealthy habits",
+      "item10": "Personalized meal planning",
+      "item11": "Therapeutic nutrition plans (for allergies or medical conditions)",
+      "item12": "Recipes",
+      "item13": "Shopping lists and purchasing recommendations"
+    },
+
+    "program1": {
+      "price": "150€",
+      "titleOne": "PROGRAM 1",
+      "titleTwo": "Basic",
+      "description": "This program is designed for those who need fundamental nutritional guidance.",
+
+      "item1": "2 online video consultations (60 min each)",
+      "item2": "Basic education on proper nutrition",
+      "item3": "Personalized 14-day meal plan",
+      "item4": "Clear guidelines for starting healthy habit changes",
+      "item5": "Support and guidance for future steps"
+    },
+
+    "program2": {
+      "price": "100€",
+      "titleOne": "PROGRAM 2",
+      "titleTwo": "Transformation\n(7 Months)",
+      "description": "This seven-month health transformation program is designed to help participants develop healthy habits, overcome unhealthy ones, and safely lose excess weight. Each participant receives personalized guidance and support throughout the entire program to achieve their goals.",
+
+      "item1": "Individual approach throughout the entire program",
+      "item2": "Duration: 7 months",
+      "item3": "Online consultations every 2 weeks (60 min)",
+      "item4": "Education on nutrition and healthy habits",
+      "item5": "Motivational and continuous support",
+      "item6": "Regular progress assessments",
+      "item7": "New personalized meal plans",
+      "item8": "New recipes and practical guidance",
+      "item9": "Gradual adoption of a healthy lifestyle",
+      "item10": "Long-term development of sustainable habits"
+    },
+
+    "program3": {
+      "price": "130€",
+      "titleOne": "PROGRAM 3",
+      "titleTwo": "Detox & Regeneration",
+      "description": "A cleansing and body-strengthening program recommended at least once a year to help eliminate accumulated toxins and support overall body regeneration.",
+
+      "item1": "2 online video consultations",
+      "item2": "Detoxification and regeneration guidelines",
+      "item3": "Education on proper food selection",
+      "item4": "Personalized recommendations for your body"
+    },
+    "month": "month",
+    "showLess": "Show Less",
+    "showMore": "Show More",
+    "inquiry": "SEND AN INQUIRY",
+    "question": "Not sure which program is right for you?",
+    "button": "GET A RECOMMENDATION →"
+  },
+  "healthWeeks": {
+    "label": "PREMIUM OFFER",
+    "title": "HEALTH WEEK RETREATS",
+    "subtitle": "An all-inclusive experience for a complete body and mind reset",
+    "subtitleHighlight": "in Istria",
+
+    "description": "Dedicate 7 days entirely to your well-being. With the support of our team of nutritionists, herbalists, and natural medicine practitioners, you will experience a unique combination of education, nature, and active relaxation.",
+    "allInclusive": "ALL INCLUSIVE",
+    "upcomingDates": "Upcoming dates: 27.09 - 04.10.2026, 04.10 - 11.10.2026, 11.10 - 18.10.2026, and more. Places are limited, reserve your spot in time!",
+    "perPerson": "per person",
+    "includedTitle": "What's included:",
+
+    "item1": "Accommodation, meals, drinks, and transportation throughout the program",
+    "item2": "Organized activity schedule and attractive destinations",
+    "item3": "Stay in the beautiful nature of Istria",
+    "item4": "Consumption of naturally grown foods",
+    "item5": "Guidance from our professional team",
+    "item6": "Small groups (up to 20 participants)",
+    "item7": "A balance of activities, rest, and education",
+    "item8": "A program designed to motivate you while respecting your own pace",
+
+    "priceText1": "The price of this all-inclusive week is",
+    "priceHighlight1": "€850 per person",
+    "priceText2": "and every participant receives a",
+    "priceHighlight2": "10% gift voucher",
+    "priceText3": "for all our other services and",
+    "priceHighlight3": "10% off a future Health Week",
+    "priceText4": "for any future date within",
+    "priceHighlight4": "15 months",
+
+    "ctaText": "View available dates, send an inquiry, and we'll send you the detailed program and location.",
+    "button": "SEND AN INQUIRY"
+  },
+  "gallery": {
+    "label": "GALLERY",
+    "title1": "Take a look at our",
+    "title2": "gallery",
+    "button": "VIEW ALL"
+  },
+  "gift": {
+    "label": "GIFT VOUCHERS",
+    "title_part1": "This gift voucher can be given to",
+    "title_highlight1": "your loved one",
+    "title_part2": "to provide motivation for",
+    "title_highlight2": "a healthier life",
+    "title_part3": "and ",
+    "title_highlight3": "and positive changes",
+
+    "programs": {
+      "program1": "Program 1",
+      "program2": "Program 2",
+      "program3": "Program 3",
+      "program4": "Health Week"
+    },
+    "titleCard": "GIFT CARD",
+    "button": "SELECT"
+  },
+  "newsletter": {
+    "title1": "JOIN OUR",
+    "title2": "NEWSLETTER",
+    "subtitle": "Be the first to learn about nutrition, healthy habits, recipes and updates",
+    "placeholder": "Enter your email address...",
+    "button": "SUBSCRIBE",
+    "note": "No spam. Unsubscribe anytime."
+  },
+  "footer": {
+    "quote": "\"Professional guidance toward healthier nutrition, building healthy habits, and a safe path to better health.\"",
+
+    "navigation": "NAVIGATION",
+    "contact": "CONTACT",
+    "socials": "SOCIAL MEDIA",
+
+    "contactText": "Feel free to contact us for any questions or applications.",
+
+    "copyright": "© 2026 Na Zdrav način. All rights reserved.",
+    "privacy": "Privacy Policy. Terms of Use."
+  },
+  "contact": {
+    "back": "Back to Home",
+
+    "contactPage": {
+      "title": "CONTACT",
+      "description": "Get in touch with us and we will respond as soon as possible.",
+
+      "points": {
+        "point1": "Send us a message.",
+        "point2": "We will get back to you as soon as possible.",
+        "point3": "We are here to answer all your questions."
+      }
+    },
+
+    "programPage": {
+      "title": "PROGRAMS",
+      "description": "Send us an inquiry about a program and we will respond as soon as possible.",
+
+      "selectLabel": "SELECT A PROGRAM",
+
+      "options": {
+        "placeholder": "SELECT A PROGRAM",
+        "program1": "Program 1 - Basic",
+        "program2": "Program 2 - Transformation (7 Months)",
+        "program3": "Program 3 - Detox & Regeneration"
+      },
+
+      "points": {
+        "point1": "We respond to inquiries within 24 hours.",
+        "point2": "The program will be tailored to your goals.",
+        "point3": "We will gladly answer all your questions."
+      }
+    },
+
+    "healthWeeksPage": {
+      "title": "HEALTH WEEK RESERVATIONS",
+      "description": "Send your reservation request in time and secure your place for a Health Week in Istria.",
+
+      "warning": "Places are limited.",
+
+      "selectLabel": "SELECT A DATE",
+
+      "points": {
+        "point1": "We will contact you within 24 hours after registration.",
+        "point2": "The reservation is confirmed after contact and deposit payment.",
+        "point3": "We are here to answer all your questions."
+      }
+    },
+    "form": {
+      "fullName": "Full Name *",
+      "email": "Email *",
+      "phone": "Phone Number *",
+
+      "note": "Note",
+      "optional": "(optional)",
+
+      "submit": "Send"
+    },
+
+    "information": {
+      "contact": "CONTACT"
+    }
+  },
+  "galleryPage": {
+    "back": "Back to Homepage",
+    "label": "GALLERY",
+    "title": "HEALTH WEEK RETREATS",
+    "description": "Nature, healthy nutrition, relaxation, and time dedicated to yourself — discover what the Health Week experience in Istria looks like."
+  }
+}

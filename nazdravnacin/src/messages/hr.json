@@ -1,0 +1,282 @@
+{
+  "nav": {
+    "home": "Početna",
+    "about": "O Nama",
+    "packages": "Paketi",
+    "weekly": "Tjedni zdravlja",
+    "gallery": "Galerija",
+    "gift": "Poklon bonovi",
+    "newsletter": "Newsletter",
+    "contact": "KONTAKTIRAJTE NAS"
+  },
+  "home": {
+    "title1": "Ovdje počinje ",
+    "title2": "stvaranje zdravih navika!",
+    "description1": "Naš stručni tim će vam pomoći da prehrana",
+    "description2": "postane alat za zdravlje, a gubitak viška kilograma",
+    "description3": "bude na zdrav i siguran način.",
+    "button1": "ZAPOČNITE PROGRAM",
+    "button2": "TJEDNI ZDRAVLJA U ISTRI"
+  },
+  "cards": {
+    "card1": {
+      "title": "Individualan pristup",
+      "text": "Svaki plan prilagođen je vašem tijelu, ciljevima i načinu života."
+    },
+    "card2": {
+      "title": "Stručan tim",
+      "text": "Radimo uz podršku nutricionista, herbalista i stručnjaka prirodne medicine."
+    },
+    "card3": {
+      "title": "Bez ekstremnih dijeta",
+      "text": "Bez izgladnjivanja i nezdravih metoda — samo održiv pristup."
+    },
+    "card4": {
+      "title": "Dugoročni rezultati",
+      "text": "Gradimo navike koje ostaju s vama cijeli život."
+    }
+  },
+  "about": {
+    "label": "O NAMA",
+
+    "title_prefix": "Zdravlju Vaš Partner Na Putu Prema",
+    "title_highlight": "Zdravlju",
+
+    "text1_part1": "Naš tim se sastoji od stručnih",
+    "text1_highlight1": "nutricionista",
+    "text1_part2": ",",
+    "text1_highlight2": "herbalista",
+    "text1_part3": "i",
+    "text1_highlight3": "lječnika prirodne medicine",
+    "text1_part4": "kojima je cilj da pomognemo osobama da iskoriste svoje potencijale i dođu do trenutka u kojem će biti ponosni na svoj rezultat. Naš pristup je individualan prema svakome.",
+
+    "text1_part5": "Prioritet našem timu je",
+    "text1_highlight4": "vaše zdravlje",
+    "text1_part6": ", a naš odnos prema prehrani je siguran i zdrav te se temelji na najkvalitetnijim istraživanjima jer trebamo shvatiti da danas postoje jako opasne dijete koje koriste sulude metode i nezdrave kemijske supstance.",
+
+    "text2_part1": "Naš zadatak je da vi sa načinom života i prehranom uvijek ostanete",
+    "text2_highlight1": "zdrave kilaze",
+    "text2_part2": ",",
+    "text2_highlight2": "snage",
+    "text2_part3": ",",
+    "text2_highlight3": "zdravih kognitivnih funkcija",
+    "text2_part4": ",",
+    "text2_highlight4": "bistrine",
+    "text2_part5": "i",
+    "text2_highlight5": "svježine",
+    "text2_part6": ". Mi također shvaćamo potrebe da se čovjek ne smije siliti ni na što i da je svakom potrebno da ima slobode kako bi njegovo zadovoljstvo bilo jače.",
+
+    "button": "ZAPOČNITE PROGRAM",
+    "gallery": "Zavirite u našu galeriju →"
+  },
+  "packages": {
+    "label": "PAKETI",
+    "title": "PROGRAMI PRILAGOĐENI VAMA",
+    "includesTitle": "Svi naši programi uključuju",
+    "commonItems": {
+      "item1": "Analiza prehrambenih navika",
+      "item2": "Određivanje trenutnog sastava tijela",
+      "item3": "Postavljanje ciljeva",
+      "item4": "Uvid u zdravstveno stanje",
+      "item5": "Nutricionističko praćenje",
+      "item6": "Stalna podrška",
+      "item7": "Online video razgovori (disciplinske konzultacije, uvid u rezultate, daljnje smjernice)",
+      "item8": "Edukacija o prehrani",
+      "item9": "Edukacija o zdravim i lošim navikama",
+      "item10": "Izrada programa prehrane (jelovnici...)",
+      "item11": "Izrada dijetoterapijskog programa prehrane (ukoliko postoje alergije ili bolesti)",
+      "item12": "Recepti",
+      "item13": "Liste i mogućnosti nabavki"
+    },
+    "program1": {
+      "price": "150€",
+      "titleOne": "PROGRAM 1",
+      "titleTwo": "Osnovni",
+      "description": "Ovaj program je za one kojima su potrebne temeljne smjernice o prehrani.",
+      "item1": "2x online video konzultacije (po 60 min)",
+      "item2": "Osnovna edukacija o pravilnoj prehrani",
+      "item3": "Individualni jelovnik za 14 dana",
+      "item4": "Jasne smjernice za početak promjene navika",
+      "item5": "Podrška i upute za daljnje korake"
+    },
+    "program2": {
+      "price": "100€",
+      "titleOne": "PROGRAM 2",
+      "titleTwo": "Transformacija\n(7 mjeseci)",
+      "description": "Ovaj program je sedmomjesečni program prema zdravlju. Kroz ovaj program stvaraju se dobre navike, prevladavaju loše navike i sigurno se gubi višak kilograma. Svakom polazniku pristupa se individualno tijekom svih 7 mjeseci kako bi ostvario svoje ciljeve.",
+      "item1": "Individualni pristup kroz cijeli program",
+      "item2": "Trajanje: 7 mjeseci",
+      "item3": "Online konzultacije svaka 2 tjedna (60 min)",
+      "item4": "Edukacija o prehrani i zdravim navikama",
+      "item5": "Motivacijska i kontinuirana podrška",
+      "item6": "Redovna analiza napretka",
+      "item7": "Novi individualni jelovnici",
+      "item8": "Novi recepti i praktične smjernice",
+      "item9": "Postepeno usvajanje zdravog načina života",
+      "item10": "Dugoročno stvaranje održivih navika"
+    },
+    "program3": {
+      "price": "130€",
+      "titleOne": "PROGRAM 3",
+      "titleTwo": "Detox & Regeneracija",
+      "description": "Program čišćenja i jačanja organizma koji se preporučuje barem jednom godišnje kako bi se organizam očistio od unesenih toksina i regenerirao.",
+      "item1": "2x online video konzultacije",
+      "item2": "Smjernice za detoks i regeneraciju",
+      "item3": "Edukacija o pravilnom odabiru namirnica",
+      "item4": "Individualne preporuke za organizam"
+    },
+    "month": "mjesečno",
+    "showLess": "Prikaži manje",
+    "showMore": "Prikaži više",
+    "inquiry": "POŠALJI UPIT",
+    "question": "Niste sigurni koji program je za vas?",
+    "button": "ZATRAŽI PREPORUKU →"
+  },
+  "healthWeeks": {
+    "label": "PREMIUM PONUDA",
+    "title": "TJEDNI ZDRAVLJA IZLETI",
+    "subtitle": "All-inclusive iskustvo za potpuni reset tijela i uma",
+    "subtitleHighlight": "u Istri",
+
+    "description": "Posveti sebi 7 dana u kojima je tvoje zdravlje na prvom mjestu. Uz podršku stručnog tima nutricionista, herbalista i liječnika prirodne medicine, prolaziš kroz iskustvo koje spaja edukaciju, prirodu i aktivan odmor.",
+    "allInclusive": "ALL INCLUSIVE",
+    "upcomingDates": "Nadolazeći termini: 27.09 - 04.10.2026, 04.10 - 11.10.2026, 11.10 - 18.10.2026 itd... Broj mjesta je ograničen, rezerviraj svoje mjesto na vrijeme!",
+    "perPerson": "po osobi",
+    "includedTitle": "Što je uključeno:",
+
+    "item1": "Organiziran smještaj, hranu i piće kroz cijele dane, prijevoz za potrebe programa",
+    "item2": "Organizirani raspored aktivnosti i atraktivne destinacije",
+    "item3": "Boravak u prirodi predivne Istre",
+    "item4": "Konzumacija svih namirnica iz prirodnog uzgoja",
+    "item5": "Vodstvo stručnog tima",
+    "item6": "Male grupe (do 20 ljudi)",
+    "item7": "Balans aktivnosti, odmora i edukacije",
+    "item8": "Program je osmišljen da te aktivira, ali uz poštivanje tvog tempa",
+
+    "priceText1": "Cijena ovog All-inclusive tjedna iznosi",
+    "priceHighlight1": "850€ po osobi",
+    "priceText2": "sa time da svaki sudionik zdravog tjedna kao poklon prima",
+    "priceHighlight2": "poklon bon od 10%",
+    "priceText3": "na sve ostale naše usluge i",
+    "priceHighlight3": "10% na Tjedan zdravlja",
+    "priceText4": "za neki od idućih termina",
+    "priceHighlight4": "unutar 15 mjeseci",
+
+    "ctaText": "Pogledaj termine, pošalji upit i šaljemo ti detaljan program i lokaciju",
+    "button": "POŠALJI UPIT"
+  },
+  "gallery": {
+    "label": "GALERIJA",
+    "title1": "Pogledajte našu",
+    "title2": "galeriju",
+    "button": "POGLEDAJ SVE"
+  },
+  "gift": {
+    "label": "POKLON BONOVI",
+    "title_part1": "Ovaj poklon bon možete pokloniti",
+    "title_highlight1": "vašoj dragoj osobi",
+    "title_part2": "kako bi joj poklonili potreban poticaj za",
+    "title_highlight2": "zdraviji život",
+    "title_part3": "i ",
+    "title_highlight3": "potrebne promjene",
+
+    "programs": {
+      "program1": "Program 1",
+      "program2": "Program 2",
+      "program3": "Program 3",
+      "program4": "Tjedan zdravlja"
+    },
+    "titleCard": "POKLON BON",
+    "button": "IZABERI"
+  },
+  "newsletter": {
+    "title1": "PRIDRUŽITE SE NAŠEM",
+    "title2": "NEWSLETTERU",
+    "subtitle": "Saznajte prvi o prehrani, zdravim navikama, receptima i novostima",
+    "placeholder": "Unesite vašu email adresu...",
+    "button": "PRETPLATI SE",
+    "note": "Bez neželjene pošte. Odjava u bilo kojem trenutku."
+  },
+  "footer": {
+    "quote": "\"Stručno vodstvo kroz zdraviju prehranu, stvaranje zdravih navika i siguran put prema boljem zdravlju.\"",
+
+    "navigation": "NAVIGACIJA",
+    "contact": "KONTAKT",
+    "socials": "DRUŠTVENE MREŽE",
+
+    "contactText": "Za sva pitanja i prijave slobodno nas kontaktirajte.",
+
+    "copyright": "© 2026 Na Zdrav način. Sva prava pridržana.",
+    "privacy": "Pravila privatnosti. Uvjeti korištenja."
+  },
+  "contact": {
+    "back": "Povratak na početnu",
+
+    "contactPage": {
+      "title": "KONTAKT",
+      "description": "Kontaktirajte nas, a mi ćemo vam se javiti u najkraćem mogućem roku",
+
+      "points": {
+        "point1": "Pošaljite nam poruku.",
+        "point2": "Odgovorit ćemo u najkraćem mogućem roku.",
+        "point3": "Za sva pitanja stojimo vam na raspolaganju."
+      }
+    },
+
+    "programPage": {
+      "title": "PROGRAMI",
+      "description": "Pošaljite nam upit za program i odgovaramo vam u najkraćem mogućem roku",
+
+      "selectLabel": "ODABERI PROGRAM",
+
+      "options": {
+        "placeholder": "ODABERI PROGRAM",
+        "program1": "Program 1 - Osnovni",
+        "program2": "Program 2 - Transformacija (7 mjeseci)",
+        "program3": "Program 3 - Detox & Regeneracija"
+      },
+
+      "points": {
+        "point1": "Odgovaramo na upite u roku 24h.",
+        "point2": "Program će biti prilagođen vašim ciljevima.",
+        "point3": "Rado ćemo odgovoriti na sva pitanja."
+      }
+    },
+
+    "healthWeeksPage": {
+      "title": "REZERVACIJE ZA TJEDNE ZDRAVLJA",
+      "description": "Pošaljite upit za rezervaciju na vrijeme i osigurajte svoje mjesto za Tjedan zdravlja u Istri",
+
+      "warning": "Broj mjesta je ograničen",
+
+      "selectLabel": "ODABERI DATUM",
+
+      "points": {
+        "point1": "Nakon prijave kontaktirat ćemo vas unutar 24h.",
+        "point2": "Rezervacija je potvrđena nakon kontakta i uplate akontacije.",
+        "point3": "Za sva pitanja stojimo vam na raspolaganju."
+      }
+    },
+
+    "form": {
+      "fullName": "Ime i prezime *",
+      "email": "Email *",
+      "phone": "Broj mobitela *",
+
+      "note": "Napomena",
+      "optional": "(neobavezno)",
+
+      "submit": "Pošalji"
+    },
+
+    "information": {
+      "contact": "KONTAKT"
+    }
+  },
+  "galleryPage": {
+    "back": "Povratak na početnu",
+    "label": "GALERIJA",
+    "title": "TJEDNI ZDRAVLJA IZLETI",
+    "description": "Priroda, zdrava prehrana, opuštanje i vrijeme posvećeno sebi — pogledajte kako izgleda iskustvo Tjedna zdravlja u Istri."
+  }
+}

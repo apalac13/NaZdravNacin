@@ -4,8 +4,11 @@ import clsx from "clsx";
 import Button from "./Button";
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Paket({ pack }) {
+  const t = useTranslations("packages");
+
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems =
@@ -31,7 +34,7 @@ export default function Paket({ pack }) {
         >
           {pack.price}
           {pack.titleOne === "PROGRAM 2" && (
-            <span className="text-base font-normal ">/mjesečno</span>
+            <span className="text-base font-normal ">/{t("month")}</span>
           )}
         </p>
         <div className="text-2xl font-medium gap-1">
@@ -84,7 +87,7 @@ export default function Paket({ pack }) {
             onClick={() => setShowAll(!showAll)}
             className="text-sm cursor-pointer text-green-11 underline"
           >
-            {showAll ? "Prikaži manje" : "Klikni za prikaz više"}
+            {showAll ? t("showLess") : t("showMore")}
           </button>
         )}
       </div>
@@ -94,7 +97,7 @@ export default function Paket({ pack }) {
       >
         <Button
           type={"button"}
-          text={"POŠALJI UPIT"}
+          text={t("inquiry")}
           color={pack.titleOne === "PROGRAM 2" && "white"}
         />
       </Link>

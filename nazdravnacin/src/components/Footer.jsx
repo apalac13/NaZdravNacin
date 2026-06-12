@@ -1,15 +1,21 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
+  const locale = useLocale();
+  const t = useTranslations("nav");
+  const f = useTranslations("footer");
+
   const navItems = [
-    { name: "Početna", link: "/#pocetna" },
-    { name: "O Nama", link: "/#onama" },
-    { name: "Paketi", link: "/#paketi" },
-    { name: "Tjedni zdravlja", link: "/#tjednizdravlja" },
-    { name: "Galerija", link: "/#galerija" },
-    { name: "Poklon bonovi", link: "/#poklonbonovi" },
-    { name: "Newsletter", link: "/#newsletter" },
+    { name: t("home"), link: "#pocetna" },
+    { name: t("about"), link: "#onama" },
+    { name: t("packages"), link: "#paketi" },
+    { name: t("weekly"), link: "#tjednizdravlja" },
+    { name: t("gallery"), link: "#galerija" },
+    { name: t("gift"), link: "#poklonbonovi" },
+    { name: t("newsletter"), link: "#newsletter" },
   ];
 
   const contactInformations = [
@@ -48,27 +54,24 @@ export default function Footer() {
             />
           </div>
           <div className="w-full h-px bg-green-11"></div>
-          <p className="text-green-11 text-sm text-balance">
-            “Stručno vodstvo kroz zdravije prehranu, stvaranje zdravih navika i
-            siguran put prema boljem zdravlju.”
-          </p>
+          <p className="text-green-11 text-sm text-balance">{f("quote")}</p>
         </div>
         <div className="flex flex-col gap-6 text-white-20">
-          <p className="font-medium">NAVIGACIJA</p>
+          <p className="font-medium">{f("navigation")}</p>
           <div className="flex flex-col gap-3">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.link}
-                href={item.link}
+                href={`/${locale}/${item.link}`}
                 className="hover:text-green-11 text-sm"
               >
                 <p>{item.name}</p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
         <div className="flex flex-col gap-6 text-white-20">
-          <p className="font-medium">KONTAKT</p>
+          <p className="font-medium">{f("contact")}</p>
           <div className="flex flex-col gap-3">
             {contactInformations.map((contact, index) => (
               <div
@@ -86,7 +89,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-6 text-white-20">
-          <p className="font-medium">DRUŠTVENE MREŽE</p>
+          <p className="font-medium">{f("socials")}</p>
           <div className="flex gap-5">
             <div className="relative w-10 h-10 cursor-pointer rounded-full hover:bg-white-20 ">
               <Image alt="facebook icon" src={"/icons/facebook.svg"} fill />
@@ -95,15 +98,13 @@ export default function Footer() {
               <Image alt="instagram icon" src={"/icons/instagram.svg"} fill />
             </div>
           </div>
-          <p className="text-sm">
-            Za sva pitanja i prijave slobodno nas kontaktirajte.
-          </p>
+          <p className="text-sm">{f("contactText")}</p>
         </div>
       </div>
       <div className="w-full border-t border-green-11">
         <div className="max-w-7xl mx-auto text-green-11 text-xs flex justify-between py-2">
-          <p>© 2026 Na Zdrav način. Sva prava pridržana.</p>
-          <p>Pravila privatnosti. Uvjeti korištenja.</p>
+          <p>{f("copyright")}</p>
+          <p>{f("privacy")}</p>
         </div>
       </div>
     </div>

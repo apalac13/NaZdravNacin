@@ -2,8 +2,10 @@
 import Image from "next/image";
 import Button from "./Button";
 import ContactInformation from "./ContactInformation";
+import { useTranslations } from "next-intl";
 
 export default function PoklonBon({ program, index }) {
+  const t = useTranslations("gift");
   const contactInformations = [
     {
       alt: "mail",
@@ -33,7 +35,9 @@ export default function PoklonBon({ program, index }) {
       className="w-100 h-75 absolute flex flex-col gap-8  items-center justify-center bg-green-10 border border-green-11 rounded-2xl py-6 px-6 transition-all duration-300 hover:scale-101 hover:z-50 cursor-pointer "
     >
       <div className="flex items-center justify-center gap-1 ">
-        <p className="text-green-11 text-base font-medium">POKLON BON - </p>
+        <p className="text-green-11 text-base font-medium">
+          {t("titleCard")} -{" "}
+        </p>
         <p className="text-white-20 text-sm font-medium">{program}</p>
       </div>
       <div className="flex gap-8">
@@ -51,7 +55,7 @@ export default function PoklonBon({ program, index }) {
           ))}
         </div>
       </div>
-      <Button type={"button"} text={"IZABERI"} color="white" />
+      <Button type={"button"} text={t("button")} color="white" />
     </div>
   );
 }

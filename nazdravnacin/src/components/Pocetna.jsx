@@ -2,8 +2,10 @@
 import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Pocetna() {
+  const t = useTranslations("home");
   return (
     <section
       id="pocetna"
@@ -11,24 +13,20 @@ export default function Pocetna() {
     >
       <div className="w-1/2 flex flex-col gap-7">
         <div className="flex flex-col text-5xl gap-2 font-semibold text-green-10 ">
-          <p>Ovdje počinje</p>
-          <p>stvaranje zdravih navika!</p>
+          <p>{t("title1")}</p>
+          <p>{t("title2")}</p>
         </div>
         <div className="text-xl ">
-          <p>Naš stručni tim će vam pomoći da prehrana</p>{" "}
-          <p>postane alat za zdravlje, a gubitak viška kilograma</p>
-          <p> bude na zdrav i siguran način.</p>
+          <p>{t("description1")}</p>
+          <p>{t("description2")}</p>
+          <p>{t("description3")}</p>
         </div>
         <div className="flex  gap-5">
           <Link href={"/#paketi"} className="max-w-60 w-full">
-            <Button type={"button"} text={"ZAPOČNITE PROGRAM"} />
+            <Button type={"button"} text={t("button1")} />
           </Link>
           <Link href={"/#tjednizdravlja"} className="max-w-60 w-full">
-            <Button
-              type={"button"}
-              text={"TJEDNI ZDRAVLJA U ISTRI"}
-              color="white"
-            />
+            <Button type={"button"} text={t("button2")} color="white" />
           </Link>
         </div>
       </div>
