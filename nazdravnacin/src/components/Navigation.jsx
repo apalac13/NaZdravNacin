@@ -20,7 +20,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="py-6 flex items-center justify-center gap-20 bg-white-20 border-b border-green-11 fixed top-0 z-50 w-full">
+    <nav className="py-6 flex items-center justify-center gap-20 bg-white-20 border-b border-green-11 fixed top-0 z-30 w-full">
       {/* LOGO */}
       <Link href={`/${locale}`}>
         <div className="relative w-36 h-14">

@@ -4,8 +4,9 @@ import Button from "./Button";
 import ContactInformation from "./ContactInformation";
 import { useTranslations } from "next-intl";
 
-export default function PoklonBon({ program, index }) {
+export default function PoklonBon({ program, index, onOpen }) {
   const t = useTranslations("gift");
+
   const contactInformations = [
     {
       alt: "mail",
@@ -32,7 +33,7 @@ export default function PoklonBon({ program, index }) {
   return (
     <div
       style={{ left: `${index * 330}px` }}
-      className="w-100 h-75 absolute flex flex-col gap-8  items-center justify-center bg-green-10 border border-green-11 rounded-2xl py-6 px-6 transition-all duration-300 hover:scale-101 hover:z-50 cursor-pointer "
+      className="w-100 h-75 absolute flex flex-col gap-8  items-center justify-center bg-green-10 border border-green-11 rounded-2xl py-6 px-6 transition-all duration-300  cursor-pointer "
     >
       <div className="flex items-center justify-center gap-1 ">
         <p className="text-green-11 text-base font-medium">
@@ -55,7 +56,9 @@ export default function PoklonBon({ program, index }) {
           ))}
         </div>
       </div>
-      <Button type={"button"} text={t("button")} color="white" />
+      <div className="w-full  max-w-60" onClick={onOpen}>
+        <Button type={"button"} text={t("button")} color="white" />
+      </div>
     </div>
   );
 }
