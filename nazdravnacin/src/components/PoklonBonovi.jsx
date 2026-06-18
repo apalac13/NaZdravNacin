@@ -1,9 +1,12 @@
 "use client";
 import PoklonBon from "./PoklonBon";
 import { useTranslations } from "next-intl";
+import Modal from "./Modal";
+import { useState } from "react";
 
 export default function PoklonBonovi() {
   const t = useTranslations("gift");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const programs = [
     t("programs.program1"),
@@ -15,7 +18,7 @@ export default function PoklonBonovi() {
   return (
     <section
       id="poklonbonovi"
-      className="w-full h-lvh flex flex-col  gap-28 justify-center items-center px-14  "
+      className="w-full min-h-screen h-full flex flex-col  gap-28 justify-center items-center px-14  "
     >
       <div className="flex flex-col gap-2 items-center justify-center">
         <p className="text-lg text-green-10 font-medium ">{t("label")}</p>
@@ -28,11 +31,17 @@ export default function PoklonBonovi() {
           <span className="text-green-10"> p{t("title_highlight3")}</span>
         </p>
       </div>
-      <div className="flex relative w-full h-full">
+      <div className="flex relative w-full min-h-125">
         {programs.map((program, index) => (
-          <PoklonBon key={index} program={program} index={index} />
+          <PoklonBon
+            key={index}
+            program={program}
+            index={index}
+            onOpen={() => setIsModalOpen(true)}
+          />
         ))}
       </div>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }
