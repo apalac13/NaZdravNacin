@@ -9,19 +9,17 @@ export default function Pocetna() {
   return (
     <section
       id="pocetna"
-      className="w-full h-lvh flex items-center justify-between px-14 pt-24 "
+      className="w-full lg:h-lvh h-full flex lg:gap-0 gap-8 lg:flex-row flex-col items-center lg:justify-between justify-center md:px-14 px-4 lg:pt-24 pt-34 pb-10 "
     >
-      <div className="w-1/2 flex flex-col gap-7">
-        <div className="flex flex-col text-5xl gap-2 font-semibold text-green-10 ">
+      <div className="lg:w-1/2 w-full flex flex-col gap-7">
+        <div className="flex flex-col lg:text-5xl md:text-4xl text-3xl md:gap-2 gap-1 font-semibold text-green-10 ">
           <p>{t("title1")}</p>
           <p>{t("title2")}</p>
         </div>
-        <div className="text-xl ">
+        <div className="lg:text-xl md:text-lg text-md text-balance">
           <p>{t("description1")}</p>
-          <p>{t("description2")}</p>
-          <p>{t("description3")}</p>
         </div>
-        <div className="flex  gap-5">
+        <div className="flex xs:flex-row flex-col   sm:gap-5 gap-3">
           <Link href={"/#paketi"} className="max-w-60 w-full">
             <Button type={"button"} text={t("button1")} />
           </Link>
@@ -30,8 +28,8 @@ export default function Pocetna() {
           </Link>
         </div>
       </div>
-      <div className="w-1/2 flex justify-end">
-        <div className="relative w-125 h-125 ">
+      <div className="lg:w-1/2 w-full flex  lg:justify-end justify-center ">
+        <div className="relative lg:w-125 lg:h-125 md:w-105 md:h-105 md: w-92 h-92 ">
           <Image
             alt="plate"
             src={"/images/plate.png"}

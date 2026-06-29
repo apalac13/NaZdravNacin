@@ -12,7 +12,7 @@
   "home": {
     "title1": "The journey toward healthy",
     "title2": "habits starts here!",
-    "description1": "Our expert team will help you turn nutrition",
+    "description1": "Our expert team will help you turn nutrition into a tool for improving your health, and losing excess weight in a safe and healthy way.",
     "description2": "into a tool for improving your health, and losing excess weight",
     "description3": "in a safe and healthy way.",
     "button1": "START YOUR PROGRAM",
@@ -92,7 +92,7 @@
     },
 
     "program1": {
-      "price": "150€",
+      "price": "149€",
       "titleOne": "PROGRAM 1",
       "titleTwo": "Basic",
       "description": "This program is designed for those who need fundamental nutritional guidance.",
@@ -105,7 +105,7 @@
     },
 
     "program2": {
-      "price": "100€",
+      "price": "99€",
       "titleOne": "PROGRAM 2",
       "titleTwo": "Transformation\n(7 Months)",
       "description": "This seven-month health transformation program is designed to help participants develop healthy habits, overcome unhealthy ones, and safely lose excess weight. Each participant receives personalized guidance and support throughout the entire program to achieve their goals.",
@@ -123,7 +123,7 @@
     },
 
     "program3": {
-      "price": "130€",
+      "price": "129€",
       "titleOne": "PROGRAM 3",
       "titleTwo": "Detox & Regeneration",
       "description": "A cleansing and body-strengthening program recommended at least once a year to help eliminate accumulated toxins and support overall body regeneration.",

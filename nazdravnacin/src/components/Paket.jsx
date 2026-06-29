@@ -19,7 +19,7 @@ export default function Paket({ pack }) {
   return (
     <div
       className={clsx(
-        "w-[320px] min-h-197.5 h-full flex flex-col gap-7 px-6 py-8 rounded-2xl",
+        "lg:w-[320px] w-full  lg:min-h-197.5 h-full flex flex-col gap-7 px-6 py-8 rounded-2xl",
         pack.titleOne === "PROGRAM 2"
           ? "bg-green-10 border border-green-10 text-white-20/90"
           : "bg-white-20 border border-white-20 ",
@@ -28,7 +28,7 @@ export default function Paket({ pack }) {
       <div className="flex flex-col gap-1">
         <p
           className={clsx(
-            "text-2xl  font-semibold",
+            "sm:text-2xl text-xl  font-semibold",
             pack.titleOne === "PROGRAM 2" ? " text-green-11" : "text-green-10 ",
           )}
         >
@@ -37,14 +37,14 @@ export default function Paket({ pack }) {
             <span className="text-base font-normal ">/{t("month")}</span>
           )}
         </p>
-        <div className="text-2xl font-medium gap-1">
+        <div className="sm:text-2xl text-xl font-medium gap-1">
           <p>{pack.titleOne}</p>
           <p className="whitespace-pre-line">{pack.titleTwo}</p>
         </div>
       </div>
       <p
         className={clsx(
-          "font-base font-light italic",
+          "font-base font-light italic sm:text-base text-sm",
           pack.titleOne === "PROGRAM 2" ? "text-white-20/90" : "text-black-40",
         )}
       >
@@ -72,7 +72,7 @@ export default function Paket({ pack }) {
             </div>
             <p
               className={clsx(
-                "text-base",
+                "sm:text-base text-sm",
                 pack.titleOne === "PROGRAM 2"
                   ? "text-white-20/90"
                   : "text-black-40",

@@ -59,7 +59,7 @@ export default function Modal({ isOpen, onClose }) {
             ✕
           </button>
 
-          <p className="text-lg font-medium mb-8 text-center">
+          <p className="sm:text-lg text-md font-medium mb-8 text-center">
             Ispunite obrazac i javit ćemo vam se u najkraćem mogućem roku.
           </p>
 
@@ -69,7 +69,7 @@ export default function Modal({ isOpen, onClose }) {
           >
             <label
               htmlFor="voucher"
-              className="text-sm font-medium text-green-10 max-w-100 w-full h-12.5 border border-green-10 bg-green-11 hover:bg-green-11/80 rounded-2xl flex items-center justify-center cursor-pointer"
+              className="sm:text-sm text-xs font-medium text-green-10 max-w-100 w-full h-12.5 border border-green-10 bg-green-11 hover:bg-green-11/80 rounded-2xl flex items-center justify-center cursor-pointer"
             >
               <select
                 name="voucher"
@@ -80,7 +80,11 @@ export default function Modal({ isOpen, onClose }) {
                 required
               >
                 {vouchers.map((voucher, index) => (
-                  <option key={index} value={voucher} className="text-sm">
+                  <option
+                    key={index}
+                    value={voucher}
+                    className="sm:text-sm text-xs"
+                  >
                     {voucher}
                   </option>
                 ))}

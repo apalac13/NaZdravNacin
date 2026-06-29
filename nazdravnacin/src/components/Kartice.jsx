@@ -28,7 +28,7 @@ export default function Kartice() {
   ];
 
   return (
-    <div className="bg-green-11 flex gap-8 items-center justify-center py-20">
+    <div className="bg-green-11 flex flex-col lg:flex-row lg:flex xs:grid xs:grid-cols-[max-content_max-content] gap-8 items-center justify-center py-20">
       {cards.map((card, index) => (
         <Kartica key={index} card={card} />
       ))}

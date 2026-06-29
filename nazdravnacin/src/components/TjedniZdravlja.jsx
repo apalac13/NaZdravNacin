@@ -20,17 +20,19 @@ export default function TjedniZdravlja() {
         className="object-cover"
       />
       <div className="absolute inset-0 bg-amber-600/10"></div>
-      <div className="w-full relative px-14 py-20 flex flex-col gap-14 items-center justify-center">
+      <div className="w-full relative sm:px-14 px-4 py-20 flex flex-col gap-14 items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-14">
-          <div className="flex flex-col gap-px items-center justify-center">
-            <p className="text-lg text-green-10 font-medium ">{t("label")}</p>
-            <p className="text-2xl font-semibold">{t("title")}</p>
-            <p className="text-2xl  font-semibold">
+          <div className="flex flex-col gap-px items-center justify-center text-center">
+            <p className="sm:text-lg text-md text-green-10 font-medium ">
+              {t("label")}
+            </p>
+            <p className="sm:text-2xl text-xl font-semibold">{t("title")}</p>
+            <p className="sm:text-2xl text-xl  font-semibold">
               {t("subtitle")}{" "}
               <span className="text-green-10">{t("subtitleHighlight")}</span>
             </p>
           </div>
-          <p className="text-base italic font-medium text-center ">
+          <p className="sm:text-base text-sm italic font-medium text-center ">
             {t("description")}
           </p>
         </div>
@@ -48,7 +50,7 @@ export default function TjedniZdravlja() {
               </p>
             </div>
           </div>
-          <div className=" self-start px-14 flex flex-col gap-6">
+          <div className=" self-start sm:px-14 px-7  flex flex-col gap-6">
             <div className="flex flex-col ">
               <p className="text-xl text-green-10 font-semibold ">
                 850€
@@ -58,12 +60,12 @@ export default function TjedniZdravlja() {
               </p>
               <p className="text-xl font-semibold">{t("includedTitle")}</p>
             </div>
-            <div className="grid grid-cols-2 gap-y-2">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-2">
               {items.map((item, index) => (
                 <Bullet key={index} text={item} />
               ))}
             </div>
-            <p className="text-center">
+            <p className="text-center sm:text-base text-sm">
               {t("priceText1")}
               <span className="font-medium"> {t("priceHighlight1")}</span>{" "}
               {t("priceText2")}{" "}
@@ -75,7 +77,7 @@ export default function TjedniZdravlja() {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-6 mt-8">
-            <p className="font-medium">{t("ctaText")}</p>
+            <p className="font-medium text-center ">{t("ctaText")}</p>
             <Link
               href={"/kontakt?type=tjednizdravlja"}
               className="max-w-60 w-full"

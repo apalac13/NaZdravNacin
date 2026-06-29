@@ -12,7 +12,7 @@
   "home": {
     "title1": "Ovdje počinje ",
     "title2": "stvaranje zdravih navika!",
-    "description1": "Naš stručni tim će vam pomoći da prehrana",
+    "description1": "Naš stručni tim će vam pomoći da prehrana postane alat za zdravlje, a gubitak viška kilograma bude na zdrav i siguran način.",
     "description2": "postane alat za zdravlje, a gubitak viška kilograma",
     "description3": "bude na zdrav i siguran način.",
     "button1": "ZAPOČNITE PROGRAM",
@@ -89,7 +89,7 @@
       "item13": "Liste i mogućnosti nabavki"
     },
     "program1": {
-      "price": "150€",
+      "price": "149€",
       "titleOne": "PROGRAM 1",
       "titleTwo": "Osnovni",
       "description": "Ovaj program je za one kojima su potrebne temeljne smjernice o prehrani.",
@@ -100,7 +100,7 @@
       "item5": "Podrška i upute za daljnje korake"
     },
     "program2": {
-      "price": "100€",
+      "price": "99€",
       "titleOne": "PROGRAM 2",
       "titleTwo": "Transformacija\n(7 mjeseci)",
       "description": "Ovaj program je sedmomjesečni program prema zdravlju. Kroz ovaj program stvaraju se dobre navike, prevladavaju loše navike i sigurno se gubi višak kilograma. Svakom polazniku pristupa se individualno tijekom svih 7 mjeseci kako bi ostvario svoje ciljeve.",
@@ -116,7 +116,7 @@
       "item10": "Dugoročno stvaranje održivih navika"
     },
     "program3": {
-      "price": "130€",
+      "price": "129€",
       "titleOne": "PROGRAM 3",
       "titleTwo": "Detox & Regeneracija",
       "description": "Program čišćenja i jačanja organizma koji se preporučuje barem jednom godišnje kako bi se organizam očistio od unesenih toksina i regenerirao.",
