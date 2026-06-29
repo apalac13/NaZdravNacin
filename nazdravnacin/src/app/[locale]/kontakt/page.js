@@ -77,8 +77,8 @@ export default function Kontakt() {
   const currentConfig = config[type] || config.kontakt;
 
   return (
-    <div className="w-full h-min-lvh h-full py-70 flex flex-col gap-25 items-center justify-center">
-      <div className="flex flex-col gap-5 items-center justify-center">
+    <div className="w-full h-min-lvh h-full lg:py-70 py-54 lg:px-0 px-4 flex flex-col gap-25 items-center justify-center">
+      <div className="flex flex-col gap-5 items-center justify-center text-center w-full">
         <Link href={"/"}>
           <p className="cursor-pointer hover:text-gray-30 flex gap-1 hover:animate-arrow-move">
             <span className="inline-block hover:animate-arrow-move">
@@ -87,20 +87,22 @@ export default function Kontakt() {
             {t("back")}
           </p>
         </Link>
-        <div className="flex flex-col gap-1 items-center justify-center">
-          <p className="text-lg text-green-10 font-medium">
+        <div className="flex flex-col gap-1 items-center justify-center w-full">
+          <p className="sm:text-lg text-md text-green-10 font-medium">
             {currentConfig.title}
           </p>
-          <p className="text-xl font-semibold">{currentConfig.description}</p>
-          <p className="text-xl font-medium">{""}</p>
+          <p className="sm:text-xl text-lg font-semibold">
+            {currentConfig.description}
+          </p>
+          <p className="sm:text-xl textt-lg font-medium">{""}</p>
           {currentConfig.warning && (
-            <p className="text-md font-medium text-green-10">
+            <p className="sm:text-md text-base font-medium text-green-10">
               {currentConfig.warning}
             </p>
           )}
         </div>
       </div>
-      <div className="w-full flex gap-9 items-center justify-center">
+      <div className="w-full flex lg:flex-row flex-col gap-9 items-center justify-center ">
         <Form config={currentConfig} />
         <Informations config={currentConfig} />
       </div>

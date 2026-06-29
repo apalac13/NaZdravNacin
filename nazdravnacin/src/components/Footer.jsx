@@ -42,8 +42,8 @@ export default function Footer() {
   ];
 
   return (
-    <div className="bg-green-10 flex flex-col items-center justify-center">
-      <div className="py-17 max-w-7xl w-full flex  items-start justify-between">
+    <div className="bg-green-10 flex flex-col items-center justify-center px-8 xl:px-0">
+      <div className="py-17 max-w-7xl w-full xl:flex grid sm:grid-cols-2 grid-cols-1 justify-content-between gap-y-8   items-start justify-between">
         <div className="self-center flex flex-col gap-5 max-w-75 w-full">
           <div className="relative w-36 h-14 ">
             <Image
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full border-t border-green-11">
-        <div className="max-w-7xl mx-auto text-green-11 text-xs flex justify-between py-2">
+        <div className="max-w-7xl mx-auto text-green-11 text-xs flex xs:flex-row flex-col xs:gap-0 gap-1 items-center  justify-between xs:py-2 py-4 ">
           <p>{f("copyright")}</p>
           <p>{f("privacy")}</p>
         </div>

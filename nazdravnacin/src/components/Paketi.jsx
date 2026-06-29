@@ -38,18 +38,20 @@ export default function Paketi() {
   return (
     <section
       id="paketi"
-      className="w-full h-full flex flex-col gap-28 items-center justify-center bg-green-11 px-14 py-24"
+      className="w-full h-full flex flex-col gap-28 items-center justify-center bg-green-11 xxl:px-14 px-4 py-24"
     >
       <div className="flex flex-col gap-2 items-center justify-center">
-        <p className="text-lg text-green-10 font-medium ">{t("label")}</p>
-        <p className="text-2xl font-semibold">{t("title")}</p>
+        <p className="sm:text-lg text-md text-green-10 font-medium ">
+          {t("label")}
+        </p>
+        <p className="sm:text-2xl text-xl font-semibold">{t("title")}</p>
       </div>
-      <div className="w-full flex gap-4 items-center">
-        <div className="w-100 h-full flex flex-col gap-10 bg-white-20 rounded-2xl border border-white-20 px-6 py-8">
+      <div className="w-full flex xxl:flex-row flex-col gap-4 items-center">
+        <div className="xxl:w-100 w-full h-full flex flex-col gap-10 bg-white-20 rounded-2xl border border-white-20 px-6 py-8">
           <p className="text-lg font-medium self-center">
             {t("includesTitle")}
           </p>
-          <div className="flex flex-col gap-3">
+          <div className="xxl:flex xxl:flex-col grid sm:grid-cols-2 grid-cols-1 gap-3">
             {commonItems.map((item, index) => (
               <div key={index} className="flex gap-1">
                 <div className="relative w-7 h-7 shrink-0">
@@ -60,17 +62,19 @@ export default function Paketi() {
                     className="object-contain "
                   />
                 </div>
-                <p className="text-base">{item}</p>
+                <p className="sm:text-base text-sm">{item}</p>
               </div>
             ))}
           </div>
         </div>
-        {packages.map((pack, index) => (
-          <Paket key={index} pack={pack} />
-        ))}
+        <div className="flex lg:flex-row flex-col gap-4 ">
+          {packages.map((pack, index) => (
+            <Paket key={index} pack={pack} />
+          ))}
+        </div>
       </div>
       <div className="flex flex-col gap-8 items-center justify-center">
-        <p className="text-2xl font-semibold">{t("question")}</p>
+        <p className="text-2xl font-semibold text-center">{t("question")}</p>
         <Link href={"/kontakt?type=kontakt"} className="max-w-60 w-full">
           <Button type={"button"} text={t("button")} />
         </Link>

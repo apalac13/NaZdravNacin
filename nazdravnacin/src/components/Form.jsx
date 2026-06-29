@@ -34,12 +34,12 @@ export default function Form({ config }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-112.5 w-full flex flex-col items-center justify-center gap-6 border border-green-11 rounded-2xl py-8 px-8"
+      className="max-w-112.5 w-full flex flex-col items-center justify-center gap-6 border border-green-11 rounded-2xl py-8 lg:px-8 px-4"
     >
       {config.showSelect && (
         <label
           htmlFor="option"
-          className="text-sm font-medium text-green-10 max-w-100 w-full h-12.5 border border-green-10 bg-green-11 hover:bg-green-11/80 rounded-2xl flex items-center justify-center cursor-pointer"
+          className="sm:text-sm text-xs font-medium text-green-10 max-w-100 w-full h-12.5 border border-green-10 bg-green-11 hover:bg-green-11/80 rounded-2xl flex items-center justify-center cursor-pointer"
         >
           <select
             name="option"
@@ -50,7 +50,7 @@ export default function Form({ config }) {
             required
           >
             {config.options.map((option, index) => (
-              <option key={index} value={option} className="text-sm">
+              <option key={index} value={option} className="sm:text-sm text-xs">
                 {option}
               </option>
             ))}
@@ -95,7 +95,7 @@ export default function Form({ config }) {
           name="message"
           value={reservationData.message}
           onChange={handleChange}
-          className="max-w-100 w-full text-sm border border-green-11 rounded-2xl p-2 placeholder:text-sm "
+          className="max-w-100 w-full sm:text-sm text-xs border border-green-11 rounded-2xl p-2 placeholder:text-sm "
         />
       </label>
       <button

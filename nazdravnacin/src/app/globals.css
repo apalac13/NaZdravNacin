@@ -11,6 +11,9 @@
   --color-gray-30: #626161;
   --color-black-40: #1e1e1e;
 
+  --breakpoint-xs: 35rem;
+  --breakpoint-xxl: 87.5rem;
+
   @keyframes infinite-scroll {
     from {
       transform: translateX(0);
