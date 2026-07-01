@@ -53,7 +53,7 @@ export default function Paketi() {
         </p>
         <p className="sm:text-2xl text-xl font-semibold">{t("title")}</p>
       </motion.div>
-      <div className="w-full flex xxl:flex-row flex-col gap-4 items-center">
+      <div className="w-full flex xxl:flex-row flex-col gap-4 items-center justify-center">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
