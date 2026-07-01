@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 export default function Newsletter() {
   const t = useTranslations("newsletter");
@@ -33,7 +34,13 @@ export default function Newsletter() {
       <div className="relative w-20 h-20">
         <Image alt="newsletter icon" src={"/icons/newsletter.svg"} fill />
       </div>
-      <div className="flex flex-col items-center justify-center gap-11">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="flex flex-col items-center justify-center gap-11"
+      >
         <div className="flex flex-col gap-px items-center justify-center text-center">
           <p className="sm:text-lg text-md text-green-10 font-medium ">
             NEWSLETTER
@@ -65,7 +72,7 @@ export default function Newsletter() {
             {t("note")}
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

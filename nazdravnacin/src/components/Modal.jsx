@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import InputField from "./InputField";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function Modal({ isOpen, onClose }) {
   const t = useTranslations("gift");
@@ -57,7 +58,12 @@ export default function Modal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-9999 overflow-y-auto">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.1 }}
+      className="fixed inset-0 z-9999 overflow-y-auto"
+    >
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={onClose}
@@ -154,6 +160,6 @@ export default function Modal({ isOpen, onClose }) {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -4,6 +4,7 @@ import Informations from "@/components/Informations";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function Kontakt() {
   const searchParams = useSearchParams();
@@ -78,7 +79,13 @@ export default function Kontakt() {
 
   return (
     <div className="w-full h-min-lvh h-full lg:py-70 py-54 lg:px-0 px-4 flex flex-col gap-25 items-center justify-center">
-      <div className="flex flex-col gap-5 items-center justify-center text-center w-full">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-5 items-center justify-center text-center w-full"
+      >
         <Link href={"/"}>
           <p className="cursor-pointer hover:text-gray-30 flex gap-1 hover:animate-arrow-move">
             <span className="inline-block hover:animate-arrow-move">
@@ -101,11 +108,17 @@ export default function Kontakt() {
             </p>
           )}
         </div>
-      </div>
-      <div className="w-full flex lg:flex-row flex-col gap-9 items-center justify-center ">
+      </motion.div>
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="w-full flex lg:flex-row flex-col gap-9 items-center justify-center "
+      >
         <Form config={currentConfig} type={type} />
         <Informations config={currentConfig} />
-      </div>
+      </motion.div>
     </div>
   );
 }

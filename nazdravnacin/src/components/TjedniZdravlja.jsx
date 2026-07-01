@@ -3,6 +3,7 @@ import Bullet from "./Bullet";
 import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function TjedniZdravlja() {
   const t = useTranslations("healthWeeks");
@@ -21,7 +22,13 @@ export default function TjedniZdravlja() {
       />
       <div className="absolute inset-0 bg-amber-600/20"></div>
       <div className="w-full relative sm:px-14 px-4 py-20 flex flex-col gap-14 items-center justify-center">
-        <div className="flex flex-col items-center justify-center gap-14">
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center justify-center gap-14"
+        >
           <div className="flex flex-col gap-px items-center justify-center text-center">
             <p className="sm:text-lg text-md text-green-10 font-medium ">
               {t("label")}
@@ -35,8 +42,14 @@ export default function TjedniZdravlja() {
           <p className="sm:text-base text-sm italic font-medium text-center ">
             {t("description")}
           </p>
-        </div>
-        <div className="w-full relative bg-white-20 flex flex-col gap-5 items-center justify-center py-14 border border-green-11 rounded-2xl">
+        </motion.div>
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="w-full relative bg-white-20 flex flex-col gap-5 items-center justify-center py-14 border border-green-11 rounded-2xl"
+        >
           <div className="absolute -top-5 z-10 w-52 h-10 bg-green-11 flex items-center justify-center rounded-2xl">
             <p className="text-green-10 text-sm ">ALL INCLUSIVE</p>
           </div>
@@ -85,7 +98,7 @@ export default function TjedniZdravlja() {
               <Button type={"button"} text={t("button")} />
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

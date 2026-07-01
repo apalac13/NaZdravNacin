@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function Pocetna() {
   const t = useTranslations("home");
@@ -11,7 +12,12 @@ export default function Pocetna() {
       id="pocetna"
       className="w-full lg:h-lvh h-full flex lg:gap-0 gap-8 lg:flex-row flex-col items-center lg:justify-between justify-center md:px-14 px-4 lg:pt-24 pt-34 pb-10 "
     >
-      <div className="lg:w-1/2 w-full flex flex-col gap-7">
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        className="lg:w-1/2 w-full flex flex-col gap-7"
+      >
         <div className="flex flex-col lg:text-5xl md:text-4xl text-3xl md:gap-2 gap-1 font-semibold text-green-10 ">
           <p>{t("title1")}</p>
           <p>{t("title2")}</p>
@@ -27,8 +33,13 @@ export default function Pocetna() {
             <Button type={"button"} text={t("button2")} color="white" />
           </Link>
         </div>
-      </div>
-      <div className="lg:w-1/2 w-full flex  lg:justify-end justify-center ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="lg:w-1/2 w-full flex  lg:justify-end justify-center "
+      >
         <div className="relative lg:w-125 lg:h-125 md:w-105 md:h-105 md: w-92 h-92 ">
           <Image
             alt="naslovna"
@@ -38,7 +49,7 @@ export default function Pocetna() {
             className="object-cover"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import Modal from "./Modal";
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { motion } from "motion/react";
 
 export default function PoklonBonovi() {
   const t = useTranslations("gift");
@@ -53,7 +54,13 @@ export default function PoklonBonovi() {
       className="w-full min-h-screen flex flex-col gap-20 justify-center items-center px-4 md:px-14 xxl:py-4 py-34"
     >
       {/* TITLE */}
-      <div className="flex flex-col gap-2 items-center justify-center text-center">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-2 items-center justify-center text-center"
+      >
         <p className="sm:text-lg text-md text-green-10 font-medium">
           {t("label")}
         </p>
@@ -66,10 +73,16 @@ export default function PoklonBonovi() {
           {t("title_part3")}
           <span className="text-green-10"> {t("title_highlight3")}</span>
         </p>
-      </div>
+      </motion.div>
 
       {/* DESKTOP STATIC */}
-      <div className="hidden xxl:flex relative w-full min-h-125 justify-center gap-6">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="hidden xxl:flex relative w-full min-h-125 justify-center gap-6"
+      >
         {programs.map((program, index) => (
           <PoklonBon
             key={index}
@@ -78,10 +91,16 @@ export default function PoklonBonovi() {
             onOpen={() => setIsModalOpen(true)}
           />
         ))}
-      </div>
+      </motion.div>
 
       {/* MOBILE CAROUSEL */}
-      <div className="xxl:hidden w-full">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="xxl:hidden w-full"
+      >
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-1">
             {programs.map((program, index) => (
@@ -120,7 +139,7 @@ export default function PoklonBonovi() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* MODAL */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
