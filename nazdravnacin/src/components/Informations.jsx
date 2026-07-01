@@ -8,12 +8,12 @@ export default function Informations({ config }) {
     {
       alt: "mail",
       src: "/icons/maildark.svg",
-      text: "programinazdravnacin@gmail.com",
+      text: "nazdravnacin@gmail.com",
     },
     {
       alt: "mail",
       src: "/icons/maildark.svg",
-      text: "izletinazdravnacin@gmail.com",
+      text: "izleti.nazdravnacin@gmail.com",
     },
     {
       alt: "phone",

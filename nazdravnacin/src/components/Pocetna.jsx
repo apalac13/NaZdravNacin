@@ -19,7 +19,7 @@ export default function Pocetna() {
         <div className="lg:text-xl md:text-lg text-md text-balance">
           <p>{t("description1")}</p>
         </div>
-        <div className="flex xs:flex-row flex-col   sm:gap-5 gap-3">
+        <div className="flex xs:flex-row flex-col sm:gap-5 gap-3">
           <Link href={"/#paketi"} className="max-w-60 w-full">
             <Button type={"button"} text={t("button1")} />
           </Link>
@@ -31,8 +31,8 @@ export default function Pocetna() {
       <div className="lg:w-1/2 w-full flex  lg:justify-end justify-center ">
         <div className="relative lg:w-125 lg:h-125 md:w-105 md:h-105 md: w-92 h-92 ">
           <Image
-            alt="plate"
-            src={"/images/plate.png"}
+            alt="naslovna"
+            src={"/images/naslovna.png"}
             fill
             priority
             className="object-cover"

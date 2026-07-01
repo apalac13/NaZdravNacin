@@ -16,7 +16,7 @@ export default function Kontakt() {
       description: t("contactPage.description"),
       showSelect: false,
       options: [],
-      email: "programinazdravnacin@gmail.com",
+      email: "nazdravnacin@gmail.com",
       points: [
         t("contactPage.points.point1"),
         t("contactPage.points.point2"),
@@ -35,7 +35,7 @@ export default function Kontakt() {
         t("programPage.options.program2"),
         t("programPage.options.program3"),
       ],
-      email: "programinazdravnacin@gmail.com",
+      email: "nazdravnacin@gmail.com",
       points: [
         t("programPage.points.point1"),
         t("programPage.points.point2"),
@@ -65,7 +65,7 @@ export default function Kontakt() {
         "23.05 - 30.05.2027",
         "30.05 - 06.06.2027",
       ],
-      email: "izletinazdravnacin@gmail.com",
+      email: "izleti.nazdravnacin@gmail.com",
       points: [
         t("healthWeeksPage.points.point1"),
         t("healthWeeksPage.points.point2"),
@@ -103,7 +103,7 @@ export default function Kontakt() {
         </div>
       </div>
       <div className="w-full flex lg:flex-row flex-col gap-9 items-center justify-center ">
-        <Form config={currentConfig} />
+        <Form config={currentConfig} type={type} />
         <Informations config={currentConfig} />
       </div>
     </div>

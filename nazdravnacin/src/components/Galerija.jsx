@@ -28,16 +28,16 @@ export default function Galerija() {
           </Link>
         </div>
         <div className="col-span-2  relative w-full h-91.75 overflow-hidden rounded-2xl ">
-          <ImageGallery alt="kuca" src={"/images/kuca.jpg"} />
+          <ImageGallery alt="kuca" src={"/images/soba.jpeg"} />
         </div>
         <div className="relative row-span-2 md:col-span-1 col-span-2 md:w-75 w-full md:h-full h-50  overflow-hidden rounded-2xl">
-          <ImageGallery alt="hrana" src={"/images/hrana.jpg"} />
+          <ImageGallery alt="hrana" src={"/images/setnjasuma.jpeg"} />
         </div>
         <div className="col-span-2 relative w-full h-50 overflow-hidden rounded-2xl">
-          <ImageGallery alt="vinograd" src={"/images/vinograd.jpg"} />
+          <ImageGallery alt="vinograd" src={"/images/morezalazak.jpeg"} />
         </div>
         <div className="relative w-full h-50 max-xl:col-span-2 overflow-hidden rounded-2xl">
-          <ImageGallery alt="predavanje" src={"/images/predavanje.jpg"} />
+          <ImageGallery alt="predavanje" src={"/images/izletigra.jpeg"} />
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export default function ImageGallery({ alt, src }) {
       alt={alt}
       src={src}
       fill
-      className="rounded-2xl object-cover object-right hover:scale-105 transition-all delay-75 duration-600 ease-in-out brightness-85 hover:brightness-100 "
+      className="rounded-2xl object-cover object-center hover:scale-105 transition-all delay-75 duration-600 ease-in-out brightness-85 hover:brightness-100 "
     />
   );
 }

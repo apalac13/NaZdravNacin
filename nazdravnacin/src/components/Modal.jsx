@@ -28,19 +28,32 @@ export default function Modal({ isOpen, onClose }) {
     setData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("FORM VOUCHER:", data);
-
-    onClose();
-    setData({
-      voucher: "",
-      person: "",
-      email: "",
-      phoneNumber: "",
-      message: "",
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...data,
+        formType: "voucher",
+      }),
     });
+
+    if (response.ok) {
+      alert("Mail je uspješno poslan.");
+      onClose();
+
+      setData({
+        voucher: "",
+        person: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+      });
+    }
   };
 
   return (
