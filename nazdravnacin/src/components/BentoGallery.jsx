@@ -14,7 +14,7 @@ export default function BentoGallery() {
     {
       id: "2",
       title: "Izlet",
-      src: "/images/izlet.jpeg",
+      src: "/images/setnjasuma.jpeg",
       className: "h-[400px]",
     },
     {
@@ -47,6 +47,7 @@ export default function BentoGallery() {
       src: "/images/soba.jpeg",
       className: "h-[500px]",
     },
+
     {
       id: "8",
       title: "Suma",

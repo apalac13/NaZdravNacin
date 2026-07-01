@@ -10,17 +10,17 @@ export default function Onama() {
   return (
     <section
       id="onama"
-      className="w-full xxl:h-lvh h-full  flex xxl:gap-0 gap-8 xxl:flex-row flex-col justify-between items-center xxl:px-14 px-4 my-12"
+      className="w-full xxl:h-lvh h-full  flex xxl:gap-0 gap-8 xxl:flex-row flex-col justify-between items-center xxl:px-14 px-4 my-12 "
     >
       <div className="xxl:w-1/2 w-full">
         <div className="relative xxl:w-150 sm:h-125 w-full h-105   overflow-hidden rounded-xl border border-green-10">
           <Image
             alt="o nama slika"
-            src={"/images/onama.jpg"}
+            src={"/images/onamanzn.jpeg"}
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black-40 to-black-40/55"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black-40 to-black-40/10"></div>
           <button className="absolute mb-5 bottom-0 sm:left-1/3 left-1/5  border border-white-20 bg-transparent hover:bg-gray-30/80 py-4 px-6 rounded-full cursor-pointer max-w-64">
             <p className="xs:text-sm text-xs text-white-20">{t("gallery")}</p>
           </button>

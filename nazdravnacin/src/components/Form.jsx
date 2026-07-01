@@ -3,7 +3,7 @@ import { useState } from "react";
 import InputField from "./InputField";
 import { useTranslations } from "next-intl";
 
-export default function Form({ config }) {
+export default function Form({ config, type }) {
   const t = useTranslations("contact.form");
   const [reservationData, setReservationData] = useState({
     option: "",
@@ -18,17 +18,31 @@ export default function Form({ config }) {
     setReservationData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    console.log("Podaci za slanje:", reservationData);
-    setReservationData({
-      option: "",
-      person: "",
-      email: "",
-      phoneNumber: "",
-      message: "",
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...reservationData,
+        formType: type,
+      }),
     });
+
+    if (response.ok) {
+      alert("Prijava je uspješno poslana.");
+
+      setReservationData({
+        option: "",
+        person: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+      });
+    }
   };
 
   return (

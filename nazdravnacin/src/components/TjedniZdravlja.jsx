@@ -15,11 +15,11 @@ export default function TjedniZdravlja() {
     >
       <Image
         alt="vinograd"
-        src={"/images/vinograd.jpg"}
+        src={"/images/pogledsuma.jpeg"}
         fill
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-amber-600/10"></div>
+      <div className="absolute inset-0 bg-amber-600/20"></div>
       <div className="w-full relative sm:px-14 px-4 py-20 flex flex-col gap-14 items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-14">
           <div className="flex flex-col gap-px items-center justify-center text-center">

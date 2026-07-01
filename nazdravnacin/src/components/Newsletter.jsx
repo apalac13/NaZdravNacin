@@ -1,9 +1,30 @@
 "use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function Newsletter() {
   const t = useTranslations("newsletter");
+  const [email, setEmail] = useState("");
+
+  const subscribe = async () => {
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        formType: "newsletter",
+        email,
+      }),
+    });
+
+    if (response.ok) {
+      alert("Uspješno ste se pretplatili.");
+      setEmail("");
+    }
+  };
+
   return (
     <section
       id="newsletter"
@@ -27,11 +48,14 @@ export default function Newsletter() {
           <div className="max-w-187.5 w-full flex gap-3">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder={t("placeholder")}
               className="w-full h-12.5 border border-black-40 rounded-2xl p-3 placeholder:text-sm"
             />
             <button
               type="button"
+              onClick={subscribe}
               className="w-42.5 h-12.5 border border-green-10 bg-green-10 rounded-2xl hover:bg-green-10/90 cursor-pointer"
             >
               <p className="text-white-20 text-xs">{t("button")}</p>

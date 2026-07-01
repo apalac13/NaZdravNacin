@@ -11,12 +11,12 @@ export default function PoklonBon({ program, index, onOpen }) {
     {
       alt: "mail",
       src: "/icons/mail.svg",
-      text: "programinazdravnacin@gmail.com",
+      text: "nazdravnacin@gmail.com",
     },
     {
       alt: "mail",
       src: "/icons/mail.svg",
-      text: "izletinazdravnacin@gmail.com",
+      text: "izleti.nazdravnacin@gmail.com",
     },
     {
       alt: "phone",
