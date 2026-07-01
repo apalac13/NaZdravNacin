@@ -4,9 +4,11 @@ import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
+import { useLocale } from "next-intl";
 
 export default function Onama() {
   const t = useTranslations("about");
+  const locale = useLocale();
 
   return (
     <section
@@ -28,9 +30,11 @@ export default function Onama() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black-40 to-black-40/10"></div>
-          <button className="absolute mb-5 bottom-0 sm:left-1/3 left-1/5  border border-white-20 bg-transparent hover:bg-gray-30/80 py-4 px-6 rounded-full cursor-pointer max-w-64">
-            <p className="xs:text-sm text-xs text-white-20">{t("gallery")}</p>
-          </button>
+          <Link href={`/${locale}/galerija`} className="max-w-60 w-full">
+            <button className="absolute mb-5 bottom-0 sm:left-1/3 left-1/5  border border-white-20 bg-transparent hover:bg-gray-30/80 py-4 px-6 rounded-full cursor-pointer max-w-64">
+              <p className="xs:text-sm text-xs text-white-20">{t("gallery")}</p>
+            </button>
+          </Link>
         </div>
       </motion.div>
       <motion.div
@@ -76,7 +80,7 @@ export default function Onama() {
             {t("text2_part6")}
           </p>
         </div>
-        <Link href={"/#paketi"} className="max-w-60 w-full">
+        <Link href={`/${locale}/#paketi`} className="max-w-60 w-full">
           <Button type={"button"} text={t("button")} />
         </Link>
       </motion.div>

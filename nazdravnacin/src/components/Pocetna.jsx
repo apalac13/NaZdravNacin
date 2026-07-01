@@ -4,9 +4,11 @@ import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
+import { useLocale } from "next-intl";
 
 export default function Pocetna() {
   const t = useTranslations("home");
+  const locale = useLocale();
   return (
     <section
       id="pocetna"
@@ -26,10 +28,10 @@ export default function Pocetna() {
           <p>{t("description1")}</p>
         </div>
         <div className="flex xs:flex-row flex-col sm:gap-5 gap-3">
-          <Link href={"/#paketi"} className="max-w-60 w-full">
+          <Link href={`/${locale}/#paketi`} className="max-w-60 w-full">
             <Button type={"button"} text={t("button1")} />
           </Link>
-          <Link href={"/#tjednizdravlja"} className="max-w-60 w-full">
+          <Link href={`/${locale}/#tjednizdravlja`} className="max-w-60 w-full">
             <Button type={"button"} text={t("button2")} color="white" />
           </Link>
         </div>

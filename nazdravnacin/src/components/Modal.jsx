@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 export default function Modal({ isOpen, onClose }) {
   const t = useTranslations("gift");
   const f = useTranslations("contact.form");
+  const d = useTranslations("contact");
   const vouchers = [
     `${t("titleCard")} - ${t("programs.program1")}`,
     `${t("titleCard")} - ${t("programs.program2")}`,
@@ -79,7 +80,7 @@ export default function Modal({ isOpen, onClose }) {
           </button>
 
           <p className="sm:text-lg text-md font-medium mb-8 text-center">
-            Ispunite obrazac i javit ćemo vam se u najkraćem mogućem roku.
+            {d("contactPage.description")}
           </p>
 
           <form

@@ -80,17 +80,17 @@ export default function Navigation() {
           className="flex xl:hidden flex-col gap-1.5"
         >
           <span
-            className={`h-0.5 w-7 bg-green-10 transition ${
+            className={`h-0.5 w-6 bg-green-10 transition ${
               isOpen ? "translate-y-2 rotate-45" : ""
             }`}
           />
           <span
-            className={`h-0.5 w-7 bg-green-10 transition ${
+            className={`h-0.5 w-6 bg-green-10 transition ${
               isOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`h-0.5 w-7 bg-green-10 transition ${
+            className={`h-0.5 w-6 bg-green-10 transition ${
               isOpen ? "-translate-y-2 -rotate-45" : ""
             }`}
           />
