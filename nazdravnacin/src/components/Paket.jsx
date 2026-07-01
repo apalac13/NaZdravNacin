@@ -5,6 +5,7 @@ import Button from "./Button";
 import { useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function Paket({ pack }) {
   const t = useTranslations("packages");
@@ -17,7 +18,11 @@ export default function Paket({ pack }) {
       : pack.items;
 
   return (
-    <div
+    <motion.div
+      initial={{ x: -50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
       className={clsx(
         "lg:w-[320px] w-full  lg:min-h-197.5 h-full flex flex-col gap-7 px-6 py-8 rounded-2xl",
         pack.titleOne === "PROGRAM 2"
@@ -25,7 +30,7 @@ export default function Paket({ pack }) {
           : "bg-white-20 border border-white-20 ",
       )}
     >
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1 ">
         <p
           className={clsx(
             "sm:text-2xl text-xl  font-semibold",
@@ -101,6 +106,6 @@ export default function Paket({ pack }) {
           color={pack.titleOne === "PROGRAM 2" && "white"}
         />
       </Link>
-    </div>
+    </motion.div>
   );
 }

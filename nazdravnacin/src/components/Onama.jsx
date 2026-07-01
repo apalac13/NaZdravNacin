@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function Onama() {
   const t = useTranslations("about");
@@ -12,7 +13,13 @@ export default function Onama() {
       id="onama"
       className="w-full xxl:h-lvh h-full  flex xxl:gap-0 gap-8 xxl:flex-row flex-col justify-between items-center xxl:px-14 px-4 my-12 "
     >
-      <div className="xxl:w-1/2 w-full">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="xxl:w-1/2 w-full"
+      >
         <div className="relative xxl:w-150 sm:h-125 w-full h-105   overflow-hidden rounded-xl border border-green-10">
           <Image
             alt="o nama slika"
@@ -25,8 +32,14 @@ export default function Onama() {
             <p className="xs:text-sm text-xs text-white-20">{t("gallery")}</p>
           </button>
         </div>
-      </div>
-      <div className="xxl:w-1/2 w-full flex flex-col gap-7  lg:px-0 px-4">
+      </motion.div>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="xxl:w-1/2 w-full flex flex-col gap-7  lg:px-0 px-4"
+      >
         <div className="flex flex-col gap-1">
           <p className="sm:text-lg text-md text-green-10 font-medium  ">
             {t("label")}
@@ -66,7 +79,7 @@ export default function Onama() {
         <Link href={"/#paketi"} className="max-w-60 w-full">
           <Button type={"button"} text={t("button")} />
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 }

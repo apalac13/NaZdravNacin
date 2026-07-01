@@ -4,6 +4,7 @@ import Paket from "./Paket";
 import Button from "./Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
 
 export default function Paketi() {
   const t = useTranslations("packages");
@@ -40,14 +41,26 @@ export default function Paketi() {
       id="paketi"
       className="w-full h-full flex flex-col gap-28 items-center justify-center bg-green-11 xxl:px-14 px-4 py-24"
     >
-      <div className="flex flex-col gap-2 items-center justify-center">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-2 items-center justify-center text-center"
+      >
         <p className="sm:text-lg text-md text-green-10 font-medium ">
           {t("label")}
         </p>
         <p className="sm:text-2xl text-xl font-semibold">{t("title")}</p>
-      </div>
+      </motion.div>
       <div className="w-full flex xxl:flex-row flex-col gap-4 items-center">
-        <div className="xxl:w-100 w-full h-full flex flex-col gap-10 bg-white-20 rounded-2xl border border-white-20 px-6 py-8">
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="xxl:w-100 w-full h-full flex flex-col gap-10 bg-white-20 rounded-2xl border border-white-20 px-6 py-8"
+        >
           <p className="text-lg font-medium self-center">
             {t("includesTitle")}
           </p>
@@ -66,7 +79,7 @@ export default function Paketi() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
         <div className="flex lg:flex-row flex-col gap-4 ">
           {packages.map((pack, index) => (
             <Paket key={index} pack={pack} />
@@ -74,7 +87,9 @@ export default function Paketi() {
         </div>
       </div>
       <div className="flex flex-col gap-8 items-center justify-center">
-        <p className="text-2xl font-semibold text-center">{t("question")}</p>
+        <p className="sm:text-2xl text-xl font-semibold text-center">
+          {t("question")}
+        </p>
         <Link href={"/kontakt?type=kontakt"} className="max-w-60 w-full">
           <Button type={"button"} text={t("button")} />
         </Link>
