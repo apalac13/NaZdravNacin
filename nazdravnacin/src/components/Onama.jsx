@@ -22,11 +22,12 @@ export default function Onama() {
         transition={{ duration: 0.5 }}
         className="xxl:w-1/2 w-full"
       >
-        <div className="relative xxl:w-150 sm:h-125 w-full h-105   overflow-hidden rounded-xl border border-green-10">
+        <div className="relative xxl:w-150 sm:h-125 w-full h-105   overflow-hidden rounded-xl ">
           <Image
             alt="o nama slika"
-            src={"/images/onamanzn.jpeg"}
+            src={"/images/webonama.png"}
             fill
+            quality={100}
             className="object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black-40 to-black-40/10"></div>
