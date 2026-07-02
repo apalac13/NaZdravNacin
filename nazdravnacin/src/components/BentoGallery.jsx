@@ -8,50 +8,50 @@ export default function BentoGallery() {
   const galleryItems = [
     {
       id: "1",
-      title: "Pogled",
+      title: "Pogled Istra",
       src: "/images/pogled.jpeg",
       className: "h-[300px]",
     },
     {
       id: "2",
-      title: "Izlet",
+      title: "Izlet Tjedni zdravlja",
       src: "/images/setnjasuma.jpeg",
       className: "h-[400px]",
     },
     {
       id: "3",
-      title: "Pogled suma",
+      title: "Pogled izlet",
       src: "/images/pogledsuma.jpeg",
       className: "h-[350px]",
     },
     {
       id: "4",
-      title: "Izlet Igra",
+      title: "Izlet druzenje Tjedni zdravlja",
       src: "/images/izletigra.jpeg",
       className: "h-[250px]",
     },
     {
       id: "5",
-      title: "Zalazak Sunca",
+      title: "Zalazak Sunca Istra",
       src: "/images/morezalazak.jpeg",
       className: "h-[400px]",
     },
     {
       id: "6",
-      title: "Setnica",
+      title: "Setnica Istra",
       src: "/images/setnica.jpeg",
       className: "h-[350px]",
     },
     {
       id: "7",
-      title: "Soba",
+      title: "Soba za Tjedne Zdravlja",
       src: "/images/soba.jpeg",
       className: "h-[500px]",
     },
 
     {
       id: "8",
-      title: "Suma",
+      title: "Suma izlet",
       src: "/images/suma.jpeg",
       className: "h-[350px]",
     },
@@ -70,7 +70,13 @@ export default function BentoGallery() {
             `relative w-full  ${item.className} overflow-hidden rounded-2xl cursor-pointer `,
           )}
         >
-          <ImageGallery alt={item.title} src={item.src} />
+          <ImageGallery
+            alt={item.title}
+            src={item.src}
+            sizes="(max-width: 640px) 100vw,
+         (max-width: 768px) 50vw,
+         33vw"
+          />
         </motion.div>
       ))}
     </motion.div>

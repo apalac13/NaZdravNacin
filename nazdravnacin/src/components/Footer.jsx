@@ -104,7 +104,7 @@ export default function Footer() {
       <div className="w-full border-t border-green-11">
         <div className="max-w-7xl mx-auto text-green-11 text-xs flex xs:flex-row flex-col xs:gap-0 gap-1 items-center  justify-between xs:py-2 py-4 ">
           <p>{f("copyright")}</p>
-          {/* <p>{f("privacy")}</p> */}
+
           <p>
             Design and development by{" "}
             <span className="font-medium">Ana</span>{" "}
