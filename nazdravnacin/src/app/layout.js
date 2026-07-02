@@ -31,6 +31,7 @@ export const metadata = {
     description: "Nutricionistički programi i Tjedni zdravlja u Istri.",
     url: "https://nazdravnacin.com",
     siteName: "Na Zdrav Način",
+
     images: [
       {
         url: "/images/og-image.jpg",
@@ -57,7 +58,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-scroll-behavior="smooth">
+    <html lang="hr" data-scroll-behavior="smooth">
       <body className={`${montserrat.className} font-montserrat text-black-40`}>
         <script
           type="application/ld+json"
