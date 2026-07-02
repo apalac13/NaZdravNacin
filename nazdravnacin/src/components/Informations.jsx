@@ -31,7 +31,7 @@ export default function Informations({ config }) {
       <div className="flex flex-col items-start justify-center gap-4">
         {config.points.map((point, index) => (
           <div key={index} className="flex items-center justify-center gap-2">
-            <div className="w-5 h-5 rounded-full bg-green-10 "></div>
+            <div className="w-5 h-5 rounded-full bg-green-10 shrink-0 "></div>
             <p className="font-medium italic text-sm">{point}</p>
           </div>
         ))}
