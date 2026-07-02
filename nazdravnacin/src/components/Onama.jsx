@@ -24,11 +24,12 @@ export default function Onama() {
       >
         <div className="relative xxl:w-150 sm:h-125 w-full h-105   overflow-hidden rounded-xl ">
           <Image
-            alt="o nama slika"
+            alt="Nutricionist"
             src={"/images/webonama.png"}
             fill
-            quality={100}
+            sizes="(max-width: 1400px) 100vw, 50vw"
             className="object-cover"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black-40 to-black-40/10"></div>
           <Link href={`/${locale}/galerija`} className="max-w-60 w-full">
@@ -54,7 +55,7 @@ export default function Onama() {
             <span className="text-green-10"> {t("title_highlight")}</span>!
           </p>
         </div>
-        <div className="flex flex-col gap-6 sm:text-base text-sm/6 ">
+        <div className="flex flex-col gap-6 sm:text-base text-sm/6 text-justify ">
           <p>
             {t("text1_part1")}{" "}
             <span className="font-medium">{t("text1_highlight1")}</span>

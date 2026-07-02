@@ -28,7 +28,7 @@ export default function Navigation() {
         {/* LOGO */}
         <Link href={`/${locale}`}>
           <div className="relative lg:w-36 lg:h-14 w-34 h-12  ">
-            <Image alt="logo" src="/icons/logo.svg" fill />
+            <Image alt="logo" src="/icons/logo.svg" fill priority />
           </div>
         </Link>
 

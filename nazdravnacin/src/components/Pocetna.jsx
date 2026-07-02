@@ -44,10 +44,11 @@ export default function Pocetna() {
       >
         <div className="relative lg:w-125 lg:h-125 md:w-105 md:h-105 md: w-92 h-92 ">
           <Image
-            alt="naslovna"
+            alt="Nutricionisticki zdravi tanjur"
             src={"/images/naslovna.png"}
             fill
             priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
           />
         </div>

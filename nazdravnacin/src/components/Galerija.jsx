@@ -41,7 +41,11 @@ export default function Galerija() {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="col-span-2  relative w-full h-91.75 overflow-hidden rounded-2xl "
         >
-          <ImageGallery alt="kuca" src={"/images/soba.jpeg"} />
+          <ImageGallery
+            alt="Smjestaj za Tjedne zdravlja"
+            src={"/images/soba.jpeg"}
+            sizes="(max-width:768px) 100vw, 50vw"
+          />
         </motion.div>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -50,7 +54,11 @@ export default function Galerija() {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="relative row-span-2 md:col-span-1 col-span-2 md:w-75 w-full md:h-full h-50  overflow-hidden rounded-2xl"
         >
-          <ImageGallery alt="hrana" src={"/images/setnjasuma.jpeg"} />
+          <ImageGallery
+            alt="Setnja Tjedni zdravlja"
+            src={"/images/setnjasuma.jpeg"}
+            sizes="(max-width:768px) 100vw, 25vw"
+          />
         </motion.div>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -59,7 +67,11 @@ export default function Galerija() {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="col-span-2 relative w-full h-50 overflow-hidden rounded-2xl"
         >
-          <ImageGallery alt="vinograd" src={"/images/morezalazak.jpeg"} />
+          <ImageGallery
+            alt="More Istra"
+            src={"/images/morezalazak.jpeg"}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </motion.div>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -68,7 +80,11 @@ export default function Galerija() {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="relative w-full h-50 max-xl:col-span-2 overflow-hidden rounded-2xl"
         >
-          <ImageGallery alt="predavanje" src={"/images/izletigra.jpeg"} />
+          <ImageGallery
+            alt="Tjedan zdravlja izlet"
+            src={"/images/izletigra.jpeg"}
+            sizes="(max-width: 768px) 100vw, 25vw"
+          />
         </motion.div>
       </div>
     </section>

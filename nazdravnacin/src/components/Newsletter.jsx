@@ -49,7 +49,7 @@ export default function Newsletter() {
             {t("title1")}
             <span className="text-green-10"> {t("title2")}</span>
           </p>
-          <p className="sm:text-2xl text-xl  font-semibold">{t("subtitle")}</p>
+          <p className="sm:text-2xl text-xl font-semibold">{t("subtitle")}</p>
         </div>
         <div className="w-full flex flex-col gap-6 items-center justify-center">
           <div className="max-w-187.5 w-full flex gap-3">
