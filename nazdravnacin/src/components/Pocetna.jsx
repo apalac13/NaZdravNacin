@@ -20,7 +20,7 @@ export default function Pocetna() {
         transition={{ duration: 0.8 }}
         className="lg:w-1/2 w-full flex flex-col gap-7"
       >
-        <div className="flex flex-col lg:text-5xl md:text-4xl text-4xl md:gap-2 gap-1 font-semibold text-green-10 ">
+        <div className="flex flex-col lg:text-5xl text-4xl md:gap-2 gap-1 font-semibold text-green-10 ">
           <p>{t("title1")}</p>
           <p>{t("title2")}</p>
         </div>

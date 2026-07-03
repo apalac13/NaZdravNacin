@@ -19,7 +19,8 @@ export default function Kartica({ index, card }) {
         <Image alt={card.title.toLowerCase()} src={card.icon} fill />
       </div>
       <p className="text-lg  text-green-10 font-medium">{card.title}</p>
-      <p className="xs:text-sm text-[13px]  italic text-center">{card.text}</p>
+      <p className="text-sm  italic text-center">{card.text}</p>
     </motion.div>
   );
+  s;
 }
