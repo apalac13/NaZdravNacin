@@ -37,7 +37,7 @@ export async function POST(req) {
     };
 
     await resend.emails.send({
-      from: "Na Zdrav Način <onboarding@resend.dev>",
+      from: "Na Zdrav Način <info@nazdravnacin.com>",
       to: recipient,
       replyTo: body.email,
       subject: subjectMap[body.formType],
