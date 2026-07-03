@@ -22,5 +22,4 @@ export default function Kartica({ index, card }) {
       <p className="text-sm  italic text-center">{card.text}</p>
     </motion.div>
   );
-  s;
 }
