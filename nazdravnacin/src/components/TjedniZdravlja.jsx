@@ -66,7 +66,7 @@ export default function TjedniZdravlja() {
           <div className=" self-start sm:px-14 px-7  flex flex-col gap-6">
             <div className="flex flex-col ">
               <p className="text-xl text-green-10 font-semibold ">
-                850€
+                1030€
                 <span className="text-base text-black-40 font-normal">
                   /{t("perPerson")}
                 </span>
